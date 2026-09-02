@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+
+# tool caches / build artifacts
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+node_modules/
+compiled_agent.json
+
+# generated/fetched data — rebuild via scripts/build_index.py, sql_pokeapi.build_database(),
+# bulbapedia_fetch.py, smogon_fetch.py (see README "Rebuilding the data" section)
+chroma_db/
+pokeapi.db
+data/pokeapi_data/
+data/processed/*.jsonl
+data/raw/bulbapedia/
+data/raw/smogon/
+
+!data/raw/.gitkeep
+!data/processed/.gitkeep

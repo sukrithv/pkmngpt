@@ -1,0 +1,9 @@
+{
+  "name": "pkmngpt-damage-service",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@smogon/calc": "^0.10.0",
+    "express": "^4.19.2"
+  }
+}

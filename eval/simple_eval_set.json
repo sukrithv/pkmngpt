@@ -1,0 +1,1379 @@
+[
+  {
+    "question": "What type is Bulbasaur?",
+    "gold_sql": "SELECT t.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE ps.identifier='bulbasaur' AND p.is_default=1 ORDER BY pt.slot",
+    "gold_answer": [
+      [
+        "grass"
+      ],
+      [
+        "poison"
+      ]
+    ],
+    "expected_answer": "Bulbasaur is Grass/Poison type.",
+    "keywords": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "question": "What are Charmander's abilities?",
+    "gold_sql": "SELECT a.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id WHERE ps.identifier='charmander' AND p.is_default=1 ORDER BY pa.is_hidden, pa.slot",
+    "gold_answer": [
+      [
+        "blaze"
+      ],
+      [
+        "solar-power"
+      ]
+    ],
+    "expected_answer": "Charmander's abilities are Blaze, Solar Power.",
+    "keywords": [
+      "blaze"
+    ]
+  },
+  {
+    "question": "What is Squirtle's base Defense?",
+    "gold_sql": "SELECT pst.base_stat FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE ps.identifier='squirtle' AND p.is_default=1 AND s.identifier='defense'",
+    "gold_answer": [
+      [
+        65
+      ]
+    ],
+    "expected_answer": "Squirtle has a base Defense of 65.",
+    "keywords": [
+      "65"
+    ]
+  },
+  {
+    "question": "What body color is Charizard?",
+    "gold_sql": "SELECT c.identifier FROM pokemon_species ps JOIN pokemon_colors c ON ps.color_id=c.id WHERE ps.identifier='charizard'",
+    "gold_answer": [
+      [
+        "red"
+      ]
+    ],
+    "expected_answer": "Charizard's body color is red.",
+    "keywords": [
+      "red"
+    ]
+  },
+  {
+    "question": "How much does Blastoise weigh in kilograms?",
+    "gold_sql": "SELECT p.weight/10.0 FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='blastoise' AND p.is_default=1",
+    "gold_answer": [
+      [
+        85.5
+      ]
+    ],
+    "expected_answer": "Blastoise weighs 85.5 kg.",
+    "keywords": [
+      "85.5"
+    ]
+  },
+  {
+    "question": "What is Venusaur's National Pokedex number?",
+    "gold_sql": "SELECT ps.id FROM pokemon_species ps WHERE ps.identifier='venusaur'",
+    "gold_answer": [
+      [
+        3
+      ]
+    ],
+    "expected_answer": "Venusaur is number 3 in the National Pokedex.",
+    "keywords": [
+      "3"
+    ]
+  },
+  {
+    "question": "What egg group(s) does Pikachu belong to?",
+    "gold_sql": "SELECT eg.identifier FROM pokemon_species ps JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id WHERE ps.identifier='pikachu' ORDER BY eg.id",
+    "gold_answer": [
+      [
+        "ground"
+      ],
+      [
+        "fairy"
+      ]
+    ],
+    "expected_answer": "Pikachu belongs to the ground, fairy egg group(s).",
+    "keywords": [
+      "ground"
+    ]
+  },
+  {
+    "question": "Which generation introduced Raichu?",
+    "gold_sql": "SELECT g.identifier FROM pokemon_species ps JOIN generations g ON ps.generation_id=g.id WHERE ps.identifier='raichu'",
+    "gold_answer": [
+      [
+        "generation-i"
+      ]
+    ],
+    "expected_answer": "Raichu was introduced in Generation I.",
+    "keywords": [
+      "generation-i"
+    ]
+  },
+  {
+    "question": "What type is Jigglypuff?",
+    "gold_sql": "SELECT t.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE ps.identifier='jigglypuff' AND p.is_default=1 ORDER BY pt.slot",
+    "gold_answer": [
+      [
+        "normal"
+      ],
+      [
+        "fairy"
+      ]
+    ],
+    "expected_answer": "Jigglypuff is Normal/Fairy type.",
+    "keywords": [
+      "normal",
+      "fairy"
+    ]
+  },
+  {
+    "question": "What are Meowth's abilities?",
+    "gold_sql": "SELECT a.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id WHERE ps.identifier='meowth' AND p.is_default=1 ORDER BY pa.is_hidden, pa.slot",
+    "gold_answer": [
+      [
+        "pickup"
+      ],
+      [
+        "technician"
+      ],
+      [
+        "unnerve"
+      ]
+    ],
+    "expected_answer": "Meowth's abilities are Pickup, Technician, Unnerve.",
+    "keywords": [
+      "pickup"
+    ]
+  },
+  {
+    "question": "What is Psyduck's base Special Defense?",
+    "gold_sql": "SELECT pst.base_stat FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE ps.identifier='psyduck' AND p.is_default=1 AND s.identifier='special-defense'",
+    "gold_answer": [
+      [
+        50
+      ]
+    ],
+    "expected_answer": "Psyduck has a base Special Defense of 50.",
+    "keywords": [
+      "50"
+    ]
+  },
+  {
+    "question": "What body color is Machop?",
+    "gold_sql": "SELECT c.identifier FROM pokemon_species ps JOIN pokemon_colors c ON ps.color_id=c.id WHERE ps.identifier='machop'",
+    "gold_answer": [
+      [
+        "gray"
+      ]
+    ],
+    "expected_answer": "Machop's body color is gray.",
+    "keywords": [
+      "gray"
+    ]
+  },
+  {
+    "question": "How much does Geodude weigh in kilograms?",
+    "gold_sql": "SELECT p.weight/10.0 FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='geodude' AND p.is_default=1",
+    "gold_answer": [
+      [
+        20.0
+      ]
+    ],
+    "expected_answer": "Geodude weighs 20 kg.",
+    "keywords": [
+      "20"
+    ]
+  },
+  {
+    "question": "What is Gengar's National Pokedex number?",
+    "gold_sql": "SELECT ps.id FROM pokemon_species ps WHERE ps.identifier='gengar'",
+    "gold_answer": [
+      [
+        94
+      ]
+    ],
+    "expected_answer": "Gengar is number 94 in the National Pokedex.",
+    "keywords": [
+      "94"
+    ]
+  },
+  {
+    "question": "What egg group(s) does Onix belong to?",
+    "gold_sql": "SELECT eg.identifier FROM pokemon_species ps JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id WHERE ps.identifier='onix' ORDER BY eg.id",
+    "gold_answer": [
+      [
+        "mineral"
+      ]
+    ],
+    "expected_answer": "Onix belongs to the mineral egg group(s).",
+    "keywords": [
+      "mineral"
+    ]
+  },
+  {
+    "question": "Which generation introduced Gyarados?",
+    "gold_sql": "SELECT g.identifier FROM pokemon_species ps JOIN generations g ON ps.generation_id=g.id WHERE ps.identifier='gyarados'",
+    "gold_answer": [
+      [
+        "generation-i"
+      ]
+    ],
+    "expected_answer": "Gyarados was introduced in Generation I.",
+    "keywords": [
+      "generation-i"
+    ]
+  },
+  {
+    "question": "What type is Lapras?",
+    "gold_sql": "SELECT t.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE ps.identifier='lapras' AND p.is_default=1 ORDER BY pt.slot",
+    "gold_answer": [
+      [
+        "water"
+      ],
+      [
+        "ice"
+      ]
+    ],
+    "expected_answer": "Lapras is Water/Ice type.",
+    "keywords": [
+      "water",
+      "ice"
+    ]
+  },
+  {
+    "question": "What are Eevee's abilities?",
+    "gold_sql": "SELECT a.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id WHERE ps.identifier='eevee' AND p.is_default=1 ORDER BY pa.is_hidden, pa.slot",
+    "gold_answer": [
+      [
+        "run-away"
+      ],
+      [
+        "adaptability"
+      ],
+      [
+        "anticipation"
+      ]
+    ],
+    "expected_answer": "Eevee's abilities are Run Away, Adaptability, Anticipation.",
+    "keywords": [
+      "run-away"
+    ]
+  },
+  {
+    "question": "What is Vaporeon's base HP?",
+    "gold_sql": "SELECT pst.base_stat FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE ps.identifier='vaporeon' AND p.is_default=1 AND s.identifier='hp'",
+    "gold_answer": [
+      [
+        130
+      ]
+    ],
+    "expected_answer": "Vaporeon has a base HP of 130.",
+    "keywords": [
+      "130"
+    ]
+  },
+  {
+    "question": "What body color is Jolteon?",
+    "gold_sql": "SELECT c.identifier FROM pokemon_species ps JOIN pokemon_colors c ON ps.color_id=c.id WHERE ps.identifier='jolteon'",
+    "gold_answer": [
+      [
+        "yellow"
+      ]
+    ],
+    "expected_answer": "Jolteon's body color is yellow.",
+    "keywords": [
+      "yellow"
+    ]
+  },
+  {
+    "question": "How much does Snorlax weigh in kilograms?",
+    "gold_sql": "SELECT p.weight/10.0 FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='snorlax' AND p.is_default=1",
+    "gold_answer": [
+      [
+        460.0
+      ]
+    ],
+    "expected_answer": "Snorlax weighs 460 kg.",
+    "keywords": [
+      "460"
+    ]
+  },
+  {
+    "question": "What is Dragonite's National Pokedex number?",
+    "gold_sql": "SELECT ps.id FROM pokemon_species ps WHERE ps.identifier='dragonite'",
+    "gold_answer": [
+      [
+        149
+      ]
+    ],
+    "expected_answer": "Dragonite is number 149 in the National Pokedex.",
+    "keywords": [
+      "149"
+    ]
+  },
+  {
+    "question": "What egg group(s) does Mewtwo belong to?",
+    "gold_sql": "SELECT eg.identifier FROM pokemon_species ps JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id WHERE ps.identifier='mewtwo' ORDER BY eg.id",
+    "gold_answer": [
+      [
+        "no-eggs"
+      ]
+    ],
+    "expected_answer": "Mewtwo belongs to the no-eggs egg group(s).",
+    "keywords": [
+      "no-eggs"
+    ]
+  },
+  {
+    "question": "Which generation introduced Mew?",
+    "gold_sql": "SELECT g.identifier FROM pokemon_species ps JOIN generations g ON ps.generation_id=g.id WHERE ps.identifier='mew'",
+    "gold_answer": [
+      [
+        "generation-i"
+      ]
+    ],
+    "expected_answer": "Mew was introduced in Generation I.",
+    "keywords": [
+      "generation-i"
+    ]
+  },
+  {
+    "question": "What type is Chikorita?",
+    "gold_sql": "SELECT t.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE ps.identifier='chikorita' AND p.is_default=1 ORDER BY pt.slot",
+    "gold_answer": [
+      [
+        "grass"
+      ]
+    ],
+    "expected_answer": "Chikorita is Grass type.",
+    "keywords": [
+      "grass"
+    ]
+  },
+  {
+    "question": "What are Cyndaquil's abilities?",
+    "gold_sql": "SELECT a.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id WHERE ps.identifier='cyndaquil' AND p.is_default=1 ORDER BY pa.is_hidden, pa.slot",
+    "gold_answer": [
+      [
+        "blaze"
+      ],
+      [
+        "flash-fire"
+      ]
+    ],
+    "expected_answer": "Cyndaquil's abilities are Blaze, Flash Fire.",
+    "keywords": [
+      "blaze"
+    ]
+  },
+  {
+    "question": "What is Totodile's base Defense?",
+    "gold_sql": "SELECT pst.base_stat FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE ps.identifier='totodile' AND p.is_default=1 AND s.identifier='defense'",
+    "gold_answer": [
+      [
+        64
+      ]
+    ],
+    "expected_answer": "Totodile has a base Defense of 64.",
+    "keywords": [
+      "64"
+    ]
+  },
+  {
+    "question": "What body color is Pichu?",
+    "gold_sql": "SELECT c.identifier FROM pokemon_species ps JOIN pokemon_colors c ON ps.color_id=c.id WHERE ps.identifier='pichu'",
+    "gold_answer": [
+      [
+        "yellow"
+      ]
+    ],
+    "expected_answer": "Pichu's body color is yellow.",
+    "keywords": [
+      "yellow"
+    ]
+  },
+  {
+    "question": "How much does Togepi weigh in kilograms?",
+    "gold_sql": "SELECT p.weight/10.0 FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='togepi' AND p.is_default=1",
+    "gold_answer": [
+      [
+        1.5
+      ]
+    ],
+    "expected_answer": "Togepi weighs 1.5 kg.",
+    "keywords": [
+      "1.5"
+    ]
+  },
+  {
+    "question": "What is Ampharos's National Pokedex number?",
+    "gold_sql": "SELECT ps.id FROM pokemon_species ps WHERE ps.identifier='ampharos'",
+    "gold_answer": [
+      [
+        181
+      ]
+    ],
+    "expected_answer": "Ampharos is number 181 in the National Pokedex.",
+    "keywords": [
+      "181"
+    ]
+  },
+  {
+    "question": "What egg group(s) does Espeon belong to?",
+    "gold_sql": "SELECT eg.identifier FROM pokemon_species ps JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id WHERE ps.identifier='espeon' ORDER BY eg.id",
+    "gold_answer": [
+      [
+        "ground"
+      ]
+    ],
+    "expected_answer": "Espeon belongs to the ground egg group(s).",
+    "keywords": [
+      "ground"
+    ]
+  },
+  {
+    "question": "Which generation introduced Umbreon?",
+    "gold_sql": "SELECT g.identifier FROM pokemon_species ps JOIN generations g ON ps.generation_id=g.id WHERE ps.identifier='umbreon'",
+    "gold_answer": [
+      [
+        "generation-ii"
+      ]
+    ],
+    "expected_answer": "Umbreon was introduced in Generation Ii.",
+    "keywords": [
+      "generation-ii"
+    ]
+  },
+  {
+    "question": "What type is Tyranitar?",
+    "gold_sql": "SELECT t.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE ps.identifier='tyranitar' AND p.is_default=1 ORDER BY pt.slot",
+    "gold_answer": [
+      [
+        "rock"
+      ],
+      [
+        "dark"
+      ]
+    ],
+    "expected_answer": "Tyranitar is Rock/Dark type.",
+    "keywords": [
+      "rock",
+      "dark"
+    ]
+  },
+  {
+    "question": "What are Lugia's abilities?",
+    "gold_sql": "SELECT a.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id WHERE ps.identifier='lugia' AND p.is_default=1 ORDER BY pa.is_hidden, pa.slot",
+    "gold_answer": [
+      [
+        "pressure"
+      ],
+      [
+        "multiscale"
+      ]
+    ],
+    "expected_answer": "Lugia's abilities are Pressure, Multiscale.",
+    "keywords": [
+      "pressure"
+    ]
+  },
+  {
+    "question": "What is Treecko's base Special Defense?",
+    "gold_sql": "SELECT pst.base_stat FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE ps.identifier='treecko' AND p.is_default=1 AND s.identifier='special-defense'",
+    "gold_answer": [
+      [
+        55
+      ]
+    ],
+    "expected_answer": "Treecko has a base Special Defense of 55.",
+    "keywords": [
+      "55"
+    ]
+  },
+  {
+    "question": "What body color is Torchic?",
+    "gold_sql": "SELECT c.identifier FROM pokemon_species ps JOIN pokemon_colors c ON ps.color_id=c.id WHERE ps.identifier='torchic'",
+    "gold_answer": [
+      [
+        "red"
+      ]
+    ],
+    "expected_answer": "Torchic's body color is red.",
+    "keywords": [
+      "red"
+    ]
+  },
+  {
+    "question": "How much does Mudkip weigh in kilograms?",
+    "gold_sql": "SELECT p.weight/10.0 FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='mudkip' AND p.is_default=1",
+    "gold_answer": [
+      [
+        7.6
+      ]
+    ],
+    "expected_answer": "Mudkip weighs 7.6 kg.",
+    "keywords": [
+      "7.6"
+    ]
+  },
+  {
+    "question": "What is Gardevoir's National Pokedex number?",
+    "gold_sql": "SELECT ps.id FROM pokemon_species ps WHERE ps.identifier='gardevoir'",
+    "gold_answer": [
+      [
+        282
+      ]
+    ],
+    "expected_answer": "Gardevoir is number 282 in the National Pokedex.",
+    "keywords": [
+      "282"
+    ]
+  },
+  {
+    "question": "What egg group(s) does Sableye belong to?",
+    "gold_sql": "SELECT eg.identifier FROM pokemon_species ps JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id WHERE ps.identifier='sableye' ORDER BY eg.id",
+    "gold_answer": [
+      [
+        "humanshape"
+      ]
+    ],
+    "expected_answer": "Sableye belongs to the humanshape egg group(s).",
+    "keywords": [
+      "humanshape"
+    ]
+  },
+  {
+    "question": "Which generation introduced Aggron?",
+    "gold_sql": "SELECT g.identifier FROM pokemon_species ps JOIN generations g ON ps.generation_id=g.id WHERE ps.identifier='aggron'",
+    "gold_answer": [
+      [
+        "generation-iii"
+      ]
+    ],
+    "expected_answer": "Aggron was introduced in Generation Iii.",
+    "keywords": [
+      "generation-iii"
+    ]
+  },
+  {
+    "question": "What type is Salamence?",
+    "gold_sql": "SELECT t.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE ps.identifier='salamence' AND p.is_default=1 ORDER BY pt.slot",
+    "gold_answer": [
+      [
+        "dragon"
+      ],
+      [
+        "flying"
+      ]
+    ],
+    "expected_answer": "Salamence is Dragon/Flying type.",
+    "keywords": [
+      "dragon",
+      "flying"
+    ]
+  },
+  {
+    "question": "What are Metagross's abilities?",
+    "gold_sql": "SELECT a.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id WHERE ps.identifier='metagross' AND p.is_default=1 ORDER BY pa.is_hidden, pa.slot",
+    "gold_answer": [
+      [
+        "clear-body"
+      ],
+      [
+        "light-metal"
+      ]
+    ],
+    "expected_answer": "Metagross's abilities are Clear Body, Light Metal.",
+    "keywords": [
+      "clear-body"
+    ]
+  },
+  {
+    "question": "What is Rayquaza's base HP?",
+    "gold_sql": "SELECT pst.base_stat FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE ps.identifier='rayquaza' AND p.is_default=1 AND s.identifier='hp'",
+    "gold_answer": [
+      [
+        105
+      ]
+    ],
+    "expected_answer": "Rayquaza has a base HP of 105.",
+    "keywords": [
+      "105"
+    ]
+  },
+  {
+    "question": "What body color is Garchomp?",
+    "gold_sql": "SELECT c.identifier FROM pokemon_species ps JOIN pokemon_colors c ON ps.color_id=c.id WHERE ps.identifier='garchomp'",
+    "gold_answer": [
+      [
+        "blue"
+      ]
+    ],
+    "expected_answer": "Garchomp's body color is blue.",
+    "keywords": [
+      "blue"
+    ]
+  },
+  {
+    "question": "How much does Lucario weigh in kilograms?",
+    "gold_sql": "SELECT p.weight/10.0 FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='lucario' AND p.is_default=1",
+    "gold_answer": [
+      [
+        54.0
+      ]
+    ],
+    "expected_answer": "Lucario weighs 54 kg.",
+    "keywords": [
+      "54"
+    ]
+  },
+  {
+    "question": "What is Riolu's National Pokedex number?",
+    "gold_sql": "SELECT ps.id FROM pokemon_species ps WHERE ps.identifier='riolu'",
+    "gold_answer": [
+      [
+        447
+      ]
+    ],
+    "expected_answer": "Riolu is number 447 in the National Pokedex.",
+    "keywords": [
+      "447"
+    ]
+  },
+  {
+    "question": "What egg group(s) does Gible belong to?",
+    "gold_sql": "SELECT eg.identifier FROM pokemon_species ps JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id WHERE ps.identifier='gible' ORDER BY eg.id",
+    "gold_answer": [
+      [
+        "monster"
+      ],
+      [
+        "dragon"
+      ]
+    ],
+    "expected_answer": "Gible belongs to the monster, dragon egg group(s).",
+    "keywords": [
+      "monster"
+    ]
+  },
+  {
+    "question": "Which generation introduced Togekiss?",
+    "gold_sql": "SELECT g.identifier FROM pokemon_species ps JOIN generations g ON ps.generation_id=g.id WHERE ps.identifier='togekiss'",
+    "gold_answer": [
+      [
+        "generation-iv"
+      ]
+    ],
+    "expected_answer": "Togekiss was introduced in Generation Iv.",
+    "keywords": [
+      "generation-iv"
+    ]
+  },
+  {
+    "question": "What type is Darkrai?",
+    "gold_sql": "SELECT t.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE ps.identifier='darkrai' AND p.is_default=1 ORDER BY pt.slot",
+    "gold_answer": [
+      [
+        "dark"
+      ]
+    ],
+    "expected_answer": "Darkrai is Dark type.",
+    "keywords": [
+      "dark"
+    ]
+  },
+  {
+    "question": "What are Greninja's abilities?",
+    "gold_sql": "SELECT a.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id WHERE ps.identifier='greninja' AND p.is_default=1 ORDER BY pa.is_hidden, pa.slot",
+    "gold_answer": [
+      [
+        "torrent"
+      ],
+      [
+        "protean"
+      ]
+    ],
+    "expected_answer": "Greninja's abilities are Torrent, Protean.",
+    "keywords": [
+      "torrent"
+    ]
+  },
+  {
+    "question": "What does Bulbasaur evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=1",
+    "gold_answer": [
+      [
+        "ivysaur"
+      ]
+    ],
+    "expected_answer": "Bulbasaur evolves into Ivysaur.",
+    "keywords": [
+      "ivysaur"
+    ]
+  },
+  {
+    "question": "What does Charmander evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=4",
+    "gold_answer": [
+      [
+        "charmeleon"
+      ]
+    ],
+    "expected_answer": "Charmander evolves into Charmeleon.",
+    "keywords": [
+      "charmeleon"
+    ]
+  },
+  {
+    "question": "What does Squirtle evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=7",
+    "gold_answer": [
+      [
+        "wartortle"
+      ]
+    ],
+    "expected_answer": "Squirtle evolves into Wartortle.",
+    "keywords": [
+      "wartortle"
+    ]
+  },
+  {
+    "question": "What does Pikachu evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=25",
+    "gold_answer": [
+      [
+        "raichu"
+      ]
+    ],
+    "expected_answer": "Pikachu evolves into Raichu.",
+    "keywords": [
+      "raichu"
+    ]
+  },
+  {
+    "question": "What does Jigglypuff evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=39",
+    "gold_answer": [
+      [
+        "wigglytuff"
+      ]
+    ],
+    "expected_answer": "Jigglypuff evolves into Wigglytuff.",
+    "keywords": [
+      "wigglytuff"
+    ]
+  },
+  {
+    "question": "What does Meowth evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=52",
+    "gold_answer": [
+      [
+        "persian"
+      ],
+      [
+        "perrserker"
+      ]
+    ],
+    "expected_answer": "Meowth evolves into Persian, Perrserker.",
+    "keywords": [
+      "persian"
+    ]
+  },
+  {
+    "question": "What does Psyduck evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=54",
+    "gold_answer": [
+      [
+        "golduck"
+      ]
+    ],
+    "expected_answer": "Psyduck evolves into Golduck.",
+    "keywords": [
+      "golduck"
+    ]
+  },
+  {
+    "question": "What does Machop evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=66",
+    "gold_answer": [
+      [
+        "machoke"
+      ]
+    ],
+    "expected_answer": "Machop evolves into Machoke.",
+    "keywords": [
+      "machoke"
+    ]
+  },
+  {
+    "question": "What does Geodude evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=74",
+    "gold_answer": [
+      [
+        "graveler"
+      ]
+    ],
+    "expected_answer": "Geodude evolves into Graveler.",
+    "keywords": [
+      "graveler"
+    ]
+  },
+  {
+    "question": "What does Onix evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=95",
+    "gold_answer": [
+      [
+        "steelix"
+      ]
+    ],
+    "expected_answer": "Onix evolves into Steelix.",
+    "keywords": [
+      "steelix"
+    ]
+  },
+  {
+    "question": "What does Eevee evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=133",
+    "gold_answer": [
+      [
+        "vaporeon"
+      ],
+      [
+        "jolteon"
+      ],
+      [
+        "flareon"
+      ],
+      [
+        "espeon"
+      ],
+      [
+        "umbreon"
+      ],
+      [
+        "leafeon"
+      ],
+      [
+        "glaceon"
+      ],
+      [
+        "sylveon"
+      ]
+    ],
+    "expected_answer": "Eevee evolves into Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon.",
+    "keywords": [
+      "vaporeon"
+    ]
+  },
+  {
+    "question": "What does Chikorita evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=152",
+    "gold_answer": [
+      [
+        "bayleef"
+      ]
+    ],
+    "expected_answer": "Chikorita evolves into Bayleef.",
+    "keywords": [
+      "bayleef"
+    ]
+  },
+  {
+    "question": "What does Cyndaquil evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=155",
+    "gold_answer": [
+      [
+        "quilava"
+      ]
+    ],
+    "expected_answer": "Cyndaquil evolves into Quilava.",
+    "keywords": [
+      "quilava"
+    ]
+  },
+  {
+    "question": "What does Totodile evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=158",
+    "gold_answer": [
+      [
+        "croconaw"
+      ]
+    ],
+    "expected_answer": "Totodile evolves into Croconaw.",
+    "keywords": [
+      "croconaw"
+    ]
+  },
+  {
+    "question": "What does Pichu evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=172",
+    "gold_answer": [
+      [
+        "pikachu"
+      ]
+    ],
+    "expected_answer": "Pichu evolves into Pikachu.",
+    "keywords": [
+      "pikachu"
+    ]
+  },
+  {
+    "question": "What does Togepi evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=175",
+    "gold_answer": [
+      [
+        "togetic"
+      ]
+    ],
+    "expected_answer": "Togepi evolves into Togetic.",
+    "keywords": [
+      "togetic"
+    ]
+  },
+  {
+    "question": "What does Treecko evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=252",
+    "gold_answer": [
+      [
+        "grovyle"
+      ]
+    ],
+    "expected_answer": "Treecko evolves into Grovyle.",
+    "keywords": [
+      "grovyle"
+    ]
+  },
+  {
+    "question": "What does Torchic evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=255",
+    "gold_answer": [
+      [
+        "combusken"
+      ]
+    ],
+    "expected_answer": "Torchic evolves into Combusken.",
+    "keywords": [
+      "combusken"
+    ]
+  },
+  {
+    "question": "What does Mudkip evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=258",
+    "gold_answer": [
+      [
+        "marshtomp"
+      ]
+    ],
+    "expected_answer": "Mudkip evolves into Marshtomp.",
+    "keywords": [
+      "marshtomp"
+    ]
+  },
+  {
+    "question": "What does Riolu evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=447",
+    "gold_answer": [
+      [
+        "lucario"
+      ]
+    ],
+    "expected_answer": "Riolu evolves into Lucario.",
+    "keywords": [
+      "lucario"
+    ]
+  },
+  {
+    "question": "What does Gible evolve into?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon_species ps WHERE ps.evolves_from_species_id=443",
+    "gold_answer": [
+      [
+        "gabite"
+      ]
+    ],
+    "expected_answer": "Gible evolves into Gabite.",
+    "keywords": [
+      "gabite"
+    ]
+  },
+  {
+    "question": "How much base experience does Bulbasaur give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='bulbasaur' AND p.is_default=1",
+    "gold_answer": [
+      [
+        64.0
+      ]
+    ],
+    "expected_answer": "Bulbasaur gives 64.0 base experience.",
+    "keywords": [
+      "64.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Charmander give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='charmander' AND p.is_default=1",
+    "gold_answer": [
+      [
+        62.0
+      ]
+    ],
+    "expected_answer": "Charmander gives 62.0 base experience.",
+    "keywords": [
+      "62.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Squirtle give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='squirtle' AND p.is_default=1",
+    "gold_answer": [
+      [
+        63.0
+      ]
+    ],
+    "expected_answer": "Squirtle gives 63.0 base experience.",
+    "keywords": [
+      "63.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Charizard give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='charizard' AND p.is_default=1",
+    "gold_answer": [
+      [
+        240.0
+      ]
+    ],
+    "expected_answer": "Charizard gives 240.0 base experience.",
+    "keywords": [
+      "240.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Blastoise give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='blastoise' AND p.is_default=1",
+    "gold_answer": [
+      [
+        239.0
+      ]
+    ],
+    "expected_answer": "Blastoise gives 239.0 base experience.",
+    "keywords": [
+      "239.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Venusaur give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='venusaur' AND p.is_default=1",
+    "gold_answer": [
+      [
+        236.0
+      ]
+    ],
+    "expected_answer": "Venusaur gives 236.0 base experience.",
+    "keywords": [
+      "236.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Pikachu give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='pikachu' AND p.is_default=1",
+    "gold_answer": [
+      [
+        112.0
+      ]
+    ],
+    "expected_answer": "Pikachu gives 112.0 base experience.",
+    "keywords": [
+      "112.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Raichu give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='raichu' AND p.is_default=1",
+    "gold_answer": [
+      [
+        218.0
+      ]
+    ],
+    "expected_answer": "Raichu gives 218.0 base experience.",
+    "keywords": [
+      "218.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Jigglypuff give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='jigglypuff' AND p.is_default=1",
+    "gold_answer": [
+      [
+        95.0
+      ]
+    ],
+    "expected_answer": "Jigglypuff gives 95.0 base experience.",
+    "keywords": [
+      "95.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Meowth give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='meowth' AND p.is_default=1",
+    "gold_answer": [
+      [
+        58.0
+      ]
+    ],
+    "expected_answer": "Meowth gives 58.0 base experience.",
+    "keywords": [
+      "58.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Psyduck give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='psyduck' AND p.is_default=1",
+    "gold_answer": [
+      [
+        64.0
+      ]
+    ],
+    "expected_answer": "Psyduck gives 64.0 base experience.",
+    "keywords": [
+      "64.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Machop give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='machop' AND p.is_default=1",
+    "gold_answer": [
+      [
+        61.0
+      ]
+    ],
+    "expected_answer": "Machop gives 61.0 base experience.",
+    "keywords": [
+      "61.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Geodude give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='geodude' AND p.is_default=1",
+    "gold_answer": [
+      [
+        60.0
+      ]
+    ],
+    "expected_answer": "Geodude gives 60.0 base experience.",
+    "keywords": [
+      "60.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Gengar give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='gengar' AND p.is_default=1",
+    "gold_answer": [
+      [
+        225.0
+      ]
+    ],
+    "expected_answer": "Gengar gives 225.0 base experience.",
+    "keywords": [
+      "225.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Onix give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='onix' AND p.is_default=1",
+    "gold_answer": [
+      [
+        77.0
+      ]
+    ],
+    "expected_answer": "Onix gives 77.0 base experience.",
+    "keywords": [
+      "77.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Gyarados give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='gyarados' AND p.is_default=1",
+    "gold_answer": [
+      [
+        189.0
+      ]
+    ],
+    "expected_answer": "Gyarados gives 189.0 base experience.",
+    "keywords": [
+      "189.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Lapras give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='lapras' AND p.is_default=1",
+    "gold_answer": [
+      [
+        187.0
+      ]
+    ],
+    "expected_answer": "Lapras gives 187.0 base experience.",
+    "keywords": [
+      "187.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Eevee give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='eevee' AND p.is_default=1",
+    "gold_answer": [
+      [
+        65.0
+      ]
+    ],
+    "expected_answer": "Eevee gives 65.0 base experience.",
+    "keywords": [
+      "65.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Vaporeon give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='vaporeon' AND p.is_default=1",
+    "gold_answer": [
+      [
+        184.0
+      ]
+    ],
+    "expected_answer": "Vaporeon gives 184.0 base experience.",
+    "keywords": [
+      "184.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Jolteon give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='jolteon' AND p.is_default=1",
+    "gold_answer": [
+      [
+        184.0
+      ]
+    ],
+    "expected_answer": "Jolteon gives 184.0 base experience.",
+    "keywords": [
+      "184.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Snorlax give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='snorlax' AND p.is_default=1",
+    "gold_answer": [
+      [
+        189.0
+      ]
+    ],
+    "expected_answer": "Snorlax gives 189.0 base experience.",
+    "keywords": [
+      "189.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Dragonite give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='dragonite' AND p.is_default=1",
+    "gold_answer": [
+      [
+        270.0
+      ]
+    ],
+    "expected_answer": "Dragonite gives 270.0 base experience.",
+    "keywords": [
+      "270.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Mewtwo give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='mewtwo' AND p.is_default=1",
+    "gold_answer": [
+      [
+        306.0
+      ]
+    ],
+    "expected_answer": "Mewtwo gives 306.0 base experience.",
+    "keywords": [
+      "306.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Mew give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='mew' AND p.is_default=1",
+    "gold_answer": [
+      [
+        270.0
+      ]
+    ],
+    "expected_answer": "Mew gives 270.0 base experience.",
+    "keywords": [
+      "270.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Chikorita give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='chikorita' AND p.is_default=1",
+    "gold_answer": [
+      [
+        64.0
+      ]
+    ],
+    "expected_answer": "Chikorita gives 64.0 base experience.",
+    "keywords": [
+      "64.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Cyndaquil give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='cyndaquil' AND p.is_default=1",
+    "gold_answer": [
+      [
+        62.0
+      ]
+    ],
+    "expected_answer": "Cyndaquil gives 62.0 base experience.",
+    "keywords": [
+      "62.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Totodile give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='totodile' AND p.is_default=1",
+    "gold_answer": [
+      [
+        63.0
+      ]
+    ],
+    "expected_answer": "Totodile gives 63.0 base experience.",
+    "keywords": [
+      "63.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Pichu give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='pichu' AND p.is_default=1",
+    "gold_answer": [
+      [
+        41.0
+      ]
+    ],
+    "expected_answer": "Pichu gives 41.0 base experience.",
+    "keywords": [
+      "41.0"
+    ]
+  },
+  {
+    "question": "How much base experience does Togepi give when defeated?",
+    "gold_sql": "SELECT p.base_experience FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='togepi' AND p.is_default=1",
+    "gold_answer": [
+      [
+        49.0
+      ]
+    ],
+    "expected_answer": "Togepi gives 49.0 base experience.",
+    "keywords": [
+      "49.0"
+    ]
+  }
+]

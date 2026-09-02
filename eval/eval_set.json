@@ -1,0 +1,1439 @@
+[
+  {
+    "question": "What type is Charizard?",
+    "answer": "Charizard is a Fire/Flying type Pokemon.",
+    "keywords": [
+      "fire",
+      "flying"
+    ]
+  },
+  {
+    "question": "What does Bulbasaur evolve into?",
+    "answer": "Bulbasaur evolves into Ivysaur, which evolves into Venusaur.",
+    "keywords": [
+      "ivysaur"
+    ]
+  },
+  {
+    "question": "What is Pikachu's ability?",
+    "answer": "Pikachu's abilities are Static and Lightning Rod.",
+    "keywords": [
+      "static"
+    ]
+  },
+  {
+    "question": "What type is Gengar?",
+    "answer": "Gengar is a Ghost/Poison type Pokemon.",
+    "keywords": [
+      "ghost",
+      "poison"
+    ]
+  },
+  {
+    "question": "What does Charmander evolve into?",
+    "answer": "Charmander evolves into Charmeleon, which evolves into Charizard.",
+    "keywords": [
+      "charmeleon"
+    ]
+  },
+  {
+    "question": "What type is Squirtle?",
+    "answer": "Squirtle is a Water type Pokemon.",
+    "keywords": [
+      "water"
+    ]
+  },
+  {
+    "question": "What does Squirtle evolve into?",
+    "answer": "Squirtle evolves into Wartortle, which evolves into Blastoise.",
+    "keywords": [
+      "wartortle"
+    ]
+  },
+  {
+    "question": "What type is Snorlax?",
+    "answer": "Snorlax is a Normal type Pokemon.",
+    "keywords": [
+      "normal"
+    ]
+  },
+  {
+    "question": "What type is Dragonite?",
+    "answer": "Dragonite is a Dragon/Flying type Pokemon.",
+    "keywords": [
+      "dragon",
+      "flying"
+    ]
+  },
+  {
+    "question": "What are Eevee's possible evolutions?",
+    "answer": "Eevee can evolve into Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, and Sylveon.",
+    "keywords": [
+      "vaporeon",
+      "jolteon",
+      "flareon"
+    ]
+  },
+  {
+    "question": "What type is Mewtwo?",
+    "answer": "Mewtwo is a Psychic type Pokemon.",
+    "keywords": [
+      "psychic"
+    ]
+  },
+  {
+    "question": "What is Mewtwo's base stat total?",
+    "answer": "Mewtwo has a base stat total of 680.",
+    "keywords": [
+      "680"
+    ]
+  },
+  {
+    "question": "What type is Lucario?",
+    "answer": "Lucario is a Fighting/Steel type Pokemon.",
+    "keywords": [
+      "fighting",
+      "steel"
+    ]
+  },
+  {
+    "question": "What does Magikarp evolve into?",
+    "answer": "Magikarp evolves into Gyarados.",
+    "keywords": [
+      "gyarados"
+    ]
+  },
+  {
+    "question": "What type is Gyarados?",
+    "answer": "Gyarados is a Water/Flying type Pokemon.",
+    "keywords": [
+      "water",
+      "flying"
+    ]
+  },
+  {
+    "question": "What type is Gardevoir?",
+    "answer": "Gardevoir is a Psychic/Fairy type Pokemon.",
+    "keywords": [
+      "psychic",
+      "fairy"
+    ]
+  },
+  {
+    "question": "What generation was Pikachu introduced in?",
+    "answer": "Pikachu was introduced in Generation I.",
+    "keywords": [
+      "generation-i"
+    ]
+  },
+  {
+    "question": "What generation was Chikorita introduced in?",
+    "answer": "Chikorita was introduced in Generation II.",
+    "keywords": [
+      "generation-ii"
+    ]
+  },
+  {
+    "question": "What generation was Treecko introduced in?",
+    "answer": "Treecko was introduced in Generation III.",
+    "keywords": [
+      "generation-iii"
+    ]
+  },
+  {
+    "question": "What type is Garchomp?",
+    "answer": "Garchomp is a Dragon/Ground type Pokemon.",
+    "keywords": [
+      "dragon",
+      "ground"
+    ]
+  },
+  {
+    "question": "What is Charizard's Pokedex number?",
+    "answer": "Charizard is number 6 in the National Pokedex.",
+    "keywords": [
+      "6"
+    ]
+  },
+  {
+    "question": "What is Mew's Pokedex number?",
+    "answer": "Mew is number 151 in the National Pokedex.",
+    "keywords": [
+      "151"
+    ]
+  },
+  {
+    "question": "What color is Pikachu according to the Pokedex?",
+    "answer": "Pikachu is classified as yellow.",
+    "keywords": [
+      "yellow"
+    ]
+  },
+  {
+    "question": "What color is Bulbasaur according to the Pokedex?",
+    "answer": "Bulbasaur is classified as green.",
+    "keywords": [
+      "green"
+    ]
+  },
+  {
+    "question": "What color is Gengar according to the Pokedex?",
+    "answer": "Gengar is classified as purple.",
+    "keywords": [
+      "purple"
+    ]
+  },
+  {
+    "question": "How tall is Pikachu?",
+    "answer": "Pikachu is 0.4 meters tall.",
+    "keywords": [
+      "0.4"
+    ]
+  },
+  {
+    "question": "How much does Pikachu weigh?",
+    "answer": "Pikachu weighs 6.0 kilograms.",
+    "keywords": [
+      "6"
+    ]
+  },
+  {
+    "question": "How tall is Onix?",
+    "answer": "Onix is 8.8 meters tall.",
+    "keywords": [
+      "8.8"
+    ]
+  },
+  {
+    "question": "How much does Snorlax weigh?",
+    "answer": "Snorlax weighs 460 kilograms.",
+    "keywords": [
+      "460"
+    ]
+  },
+  {
+    "question": "What type is Alakazam?",
+    "answer": "Alakazam is a Psychic type Pokemon.",
+    "keywords": [
+      "psychic"
+    ]
+  },
+  {
+    "question": "What does Abra evolve into?",
+    "answer": "Abra evolves into Kadabra, which evolves into Alakazam.",
+    "keywords": [
+      "kadabra"
+    ]
+  },
+  {
+    "question": "What type is Machamp?",
+    "answer": "Machamp is a Fighting type Pokemon.",
+    "keywords": [
+      "fighting"
+    ]
+  },
+  {
+    "question": "What is Machamp's ability?",
+    "answer": "Machamp's abilities are Guts, No Guard, and Steadfast.",
+    "keywords": [
+      "guts"
+    ]
+  },
+  {
+    "question": "What type is Blastoise?",
+    "answer": "Blastoise is a Water type Pokemon.",
+    "keywords": [
+      "water"
+    ]
+  },
+  {
+    "question": "What type is Venusaur?",
+    "answer": "Venusaur is a Grass/Poison type Pokemon.",
+    "keywords": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "question": "What is Venusaur's ability?",
+    "answer": "Venusaur's abilities are Overgrow and Chlorophyll.",
+    "keywords": [
+      "overgrow"
+    ]
+  },
+  {
+    "question": "What is Charizard's ability?",
+    "answer": "Charizard's abilities are Blaze and Solar Power.",
+    "keywords": [
+      "blaze"
+    ]
+  },
+  {
+    "question": "What is Blastoise's ability?",
+    "answer": "Blastoise's abilities are Torrent and Rain Dish.",
+    "keywords": [
+      "torrent"
+    ]
+  },
+  {
+    "question": "What type is Jigglypuff?",
+    "answer": "Jigglypuff is a Normal/Fairy type Pokemon.",
+    "keywords": [
+      "normal",
+      "fairy"
+    ]
+  },
+  {
+    "question": "What does Jigglypuff evolve into?",
+    "answer": "Jigglypuff evolves into Wigglytuff.",
+    "keywords": [
+      "wigglytuff"
+    ]
+  },
+  {
+    "question": "What does Igglybuff evolve into?",
+    "answer": "Igglybuff evolves into Jigglypuff, which evolves into Wigglytuff.",
+    "keywords": [
+      "jigglypuff"
+    ]
+  },
+  {
+    "question": "What type is Meowth?",
+    "answer": "Meowth is a Normal type Pokemon.",
+    "keywords": [
+      "normal"
+    ]
+  },
+  {
+    "question": "What does Meowth evolve into?",
+    "answer": "Meowth evolves into Persian.",
+    "keywords": [
+      "persian"
+    ]
+  },
+  {
+    "question": "What type is Psyduck?",
+    "answer": "Psyduck is a Water type Pokemon.",
+    "keywords": [
+      "water"
+    ]
+  },
+  {
+    "question": "What does Psyduck evolve into?",
+    "answer": "Psyduck evolves into Golduck.",
+    "keywords": [
+      "golduck"
+    ]
+  },
+  {
+    "question": "What type is Machop?",
+    "answer": "Machop is a Fighting type Pokemon.",
+    "keywords": [
+      "fighting"
+    ]
+  },
+  {
+    "question": "What does Machop evolve into?",
+    "answer": "Machop evolves into Machoke, which evolves into Machamp.",
+    "keywords": [
+      "machoke"
+    ]
+  },
+  {
+    "question": "What type is Geodude?",
+    "answer": "Geodude is a Rock/Ground type Pokemon.",
+    "keywords": [
+      "rock",
+      "ground"
+    ]
+  },
+  {
+    "question": "What does Geodude evolve into?",
+    "answer": "Geodude evolves into Graveler, which evolves into Golem.",
+    "keywords": [
+      "graveler"
+    ]
+  },
+  {
+    "question": "What type is Ponyta?",
+    "answer": "Ponyta is a Fire type Pokemon.",
+    "keywords": [
+      "fire"
+    ]
+  },
+  {
+    "question": "What does Ponyta evolve into?",
+    "answer": "Ponyta evolves into Rapidash.",
+    "keywords": [
+      "rapidash"
+    ]
+  },
+  {
+    "question": "What type is Slowpoke?",
+    "answer": "Slowpoke is a Water/Psychic type Pokemon.",
+    "keywords": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "question": "What type is Magnemite?",
+    "answer": "Magnemite is an Electric/Steel type Pokemon.",
+    "keywords": [
+      "electric",
+      "steel"
+    ]
+  },
+  {
+    "question": "What does Magnemite evolve into?",
+    "answer": "Magnemite evolves into Magneton, which evolves into Magnezone.",
+    "keywords": [
+      "magneton"
+    ]
+  },
+  {
+    "question": "What type is Gastly?",
+    "answer": "Gastly is a Ghost/Poison type Pokemon.",
+    "keywords": [
+      "ghost",
+      "poison"
+    ]
+  },
+  {
+    "question": "What does Gastly evolve into?",
+    "answer": "Gastly evolves into Haunter, which evolves into Gengar.",
+    "keywords": [
+      "haunter"
+    ]
+  },
+  {
+    "question": "What type is Onix?",
+    "answer": "Onix is a Rock/Ground type Pokemon.",
+    "keywords": [
+      "rock",
+      "ground"
+    ]
+  },
+  {
+    "question": "What type is Cubone?",
+    "answer": "Cubone is a Ground type Pokemon.",
+    "keywords": [
+      "ground"
+    ]
+  },
+  {
+    "question": "What does Cubone evolve into?",
+    "answer": "Cubone evolves into Marowak.",
+    "keywords": [
+      "marowak"
+    ]
+  },
+  {
+    "question": "What type is Scyther?",
+    "answer": "Scyther is a Bug/Flying type Pokemon.",
+    "keywords": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "question": "What type is Pinsir?",
+    "answer": "Pinsir is a Bug type Pokemon.",
+    "keywords": [
+      "bug"
+    ]
+  },
+  {
+    "question": "What type is Lapras?",
+    "answer": "Lapras is a Water/Ice type Pokemon.",
+    "keywords": [
+      "water",
+      "ice"
+    ]
+  },
+  {
+    "question": "What type is Ditto?",
+    "answer": "Ditto is a Normal type Pokemon.",
+    "keywords": [
+      "normal"
+    ]
+  },
+  {
+    "question": "What is Ditto's ability?",
+    "answer": "Ditto's abilities are Limber and Imposter.",
+    "keywords": [
+      "limber"
+    ]
+  },
+  {
+    "question": "What type is Vaporeon?",
+    "answer": "Vaporeon is a Water type Pokemon.",
+    "keywords": [
+      "water"
+    ]
+  },
+  {
+    "question": "What type is Jolteon?",
+    "answer": "Jolteon is an Electric type Pokemon.",
+    "keywords": [
+      "electric"
+    ]
+  },
+  {
+    "question": "What type is Flareon?",
+    "answer": "Flareon is a Fire type Pokemon.",
+    "keywords": [
+      "fire"
+    ]
+  },
+  {
+    "question": "What type is Umbreon?",
+    "answer": "Umbreon is a Dark type Pokemon.",
+    "keywords": [
+      "dark"
+    ]
+  },
+  {
+    "question": "What type is Espeon?",
+    "answer": "Espeon is a Psychic type Pokemon.",
+    "keywords": [
+      "psychic"
+    ]
+  },
+  {
+    "question": "What type is Sylveon?",
+    "answer": "Sylveon is a Fairy type Pokemon.",
+    "keywords": [
+      "fairy"
+    ]
+  },
+  {
+    "question": "What type is Articuno?",
+    "answer": "Articuno is an Ice/Flying type Pokemon.",
+    "keywords": [
+      "ice",
+      "flying"
+    ]
+  },
+  {
+    "question": "What type is Zapdos?",
+    "answer": "Zapdos is an Electric/Flying type Pokemon.",
+    "keywords": [
+      "electric",
+      "flying"
+    ]
+  },
+  {
+    "question": "What type is Moltres?",
+    "answer": "Moltres is a Fire/Flying type Pokemon.",
+    "keywords": [
+      "fire",
+      "flying"
+    ]
+  },
+  {
+    "question": "What type is Tyranitar?",
+    "answer": "Tyranitar is a Rock/Dark type Pokemon.",
+    "keywords": [
+      "rock",
+      "dark"
+    ]
+  },
+  {
+    "question": "What does Larvitar evolve into?",
+    "answer": "Larvitar evolves into Pupitar, which evolves into Tyranitar.",
+    "keywords": [
+      "pupitar"
+    ]
+  },
+  {
+    "question": "What type is Feraligatr?",
+    "answer": "Feraligatr is a Water type Pokemon.",
+    "keywords": [
+      "water"
+    ]
+  },
+  {
+    "question": "What does Totodile evolve into?",
+    "answer": "Totodile evolves into Croconaw, which evolves into Feraligatr.",
+    "keywords": [
+      "croconaw"
+    ]
+  },
+  {
+    "question": "What type is Typhlosion?",
+    "answer": "Typhlosion is a Fire type Pokemon.",
+    "keywords": [
+      "fire"
+    ]
+  },
+  {
+    "question": "What type is Meganium?",
+    "answer": "Meganium is a Grass type Pokemon.",
+    "keywords": [
+      "grass"
+    ]
+  },
+  {
+    "question": "What type is Lugia?",
+    "answer": "Lugia is a Psychic/Flying type Pokemon.",
+    "keywords": [
+      "psychic",
+      "flying"
+    ]
+  },
+  {
+    "question": "What type is Ho-Oh?",
+    "answer": "Ho-Oh is a Fire/Flying type Pokemon.",
+    "keywords": [
+      "fire",
+      "flying"
+    ]
+  },
+  {
+    "question": "What type is Celebi?",
+    "answer": "Celebi is a Psychic/Grass type Pokemon.",
+    "keywords": [
+      "psychic",
+      "grass"
+    ]
+  },
+  {
+    "question": "What type is Blaziken?",
+    "answer": "Blaziken is a Fire/Fighting type Pokemon.",
+    "keywords": [
+      "fire",
+      "fighting"
+    ]
+  },
+  {
+    "question": "What does Torchic evolve into?",
+    "answer": "Torchic evolves into Combusken, which evolves into Blaziken.",
+    "keywords": [
+      "combusken"
+    ]
+  },
+  {
+    "question": "What type is Swampert?",
+    "answer": "Swampert is a Water/Ground type Pokemon.",
+    "keywords": [
+      "water",
+      "ground"
+    ]
+  },
+  {
+    "question": "What type is Sceptile?",
+    "answer": "Sceptile is a Grass type Pokemon.",
+    "keywords": [
+      "grass"
+    ]
+  },
+  {
+    "question": "What type is Rayquaza?",
+    "answer": "Rayquaza is a Dragon/Flying type Pokemon.",
+    "keywords": [
+      "dragon",
+      "flying"
+    ]
+  },
+  {
+    "question": "What type is Groudon?",
+    "answer": "Groudon is a Ground type Pokemon.",
+    "keywords": [
+      "ground"
+    ]
+  },
+  {
+    "question": "What type is Kyogre?",
+    "answer": "Kyogre is a Water type Pokemon.",
+    "keywords": [
+      "water"
+    ]
+  },
+  {
+    "question": "What type is Metagross?",
+    "answer": "Metagross is a Steel/Psychic type Pokemon.",
+    "keywords": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "question": "What type is Salamence?",
+    "answer": "Salamence is a Dragon/Flying type Pokemon.",
+    "keywords": [
+      "dragon",
+      "flying"
+    ]
+  },
+  {
+    "question": "What type is Dialga?",
+    "answer": "Dialga is a Steel/Dragon type Pokemon.",
+    "keywords": [
+      "steel",
+      "dragon"
+    ]
+  },
+  {
+    "question": "What type is Palkia?",
+    "answer": "Palkia is a Water/Dragon type Pokemon.",
+    "keywords": [
+      "water",
+      "dragon"
+    ]
+  },
+  {
+    "question": "What type is Giratina?",
+    "answer": "Giratina is a Ghost/Dragon type Pokemon.",
+    "keywords": [
+      "ghost",
+      "dragon"
+    ]
+  },
+  {
+    "question": "What type is Arceus?",
+    "answer": "Arceus is a Normal type Pokemon.",
+    "keywords": [
+      "normal"
+    ]
+  },
+  {
+    "question": "What is Arceus's base stat total?",
+    "answer": "Arceus has a base stat total of 720.",
+    "keywords": [
+      "720"
+    ]
+  },
+  {
+    "question": "What is Blissey's base HP stat?",
+    "answer": "Blissey has a base HP stat of 255, the highest of any Pokemon.",
+    "keywords": [
+      "255"
+    ]
+  },
+  {
+    "question": "What type is Blissey?",
+    "answer": "Blissey is a Normal type Pokemon.",
+    "keywords": [
+      "normal"
+    ]
+  },
+  {
+    "question": "What is Shuckle's base Defense stat?",
+    "answer": "Shuckle has a base Defense stat of 230.",
+    "keywords": [
+      "230"
+    ]
+  },
+  {
+    "question": "What type is Shuckle?",
+    "answer": "Shuckle is a Bug/Rock type Pokemon.",
+    "keywords": [
+      "bug",
+      "rock"
+    ]
+  },
+  {
+    "question": "Gyarados has a dual typing. Which attacking type(s) deal 4× damage to it?",
+    "answer": "Gyarados is Water/Flying, so Electric-type moves hit it for 4× damage.",
+    "keywords": [
+      "electric"
+    ]
+  },
+  {
+    "question": "Charizard has a dual typing. Which attacking type(s) deal 4× damage to it?",
+    "answer": "Charizard is Fire/Flying, so Rock-type moves hit it for 4× damage.",
+    "keywords": [
+      "rock"
+    ]
+  },
+  {
+    "question": "Dragonite has a dual typing. Which attacking type(s) deal 4× damage to it?",
+    "answer": "Dragonite is Dragon/Flying, so Ice-type moves hit it for 4× damage.",
+    "keywords": [
+      "ice"
+    ]
+  },
+  {
+    "question": "Scizor has a dual typing. Which attacking type(s) deal 4× damage to it?",
+    "answer": "Scizor is Bug/Steel, so Fire-type moves hit it for 4× damage.",
+    "keywords": [
+      "fire"
+    ]
+  },
+  {
+    "question": "Tyranitar has a dual typing. Which attacking type(s) deal 4× damage to it?",
+    "answer": "Tyranitar is Rock/Dark, so Fighting-type moves hit it for 4× damage.",
+    "keywords": [
+      "fighting"
+    ]
+  },
+  {
+    "question": "Torterra has a dual typing. Which attacking type(s) deal 4× damage to it?",
+    "answer": "Torterra is Grass/Ground, so Ice-type moves hit it for 4× damage.",
+    "keywords": [
+      "ice"
+    ]
+  },
+  {
+    "question": "Gliscor has a dual typing. Which attacking type(s) deal 4× damage to it?",
+    "answer": "Gliscor is Ground/Flying, so Ice-type moves hit it for 4× damage.",
+    "keywords": [
+      "ice"
+    ]
+  },
+  {
+    "question": "Volcarona has a dual typing. Which attacking type(s) deal 4× damage to it?",
+    "answer": "Volcarona is Bug/Fire, so Rock-type moves hit it for 4× damage.",
+    "keywords": [
+      "rock"
+    ]
+  },
+  {
+    "question": "Given Skarmory's type combination, which attacking type(s) deal no damage to it at all?",
+    "answer": "Skarmory is Steel/Flying, making it immune to Ground- and Poison-type moves.",
+    "keywords": [
+      "ground",
+      "poison"
+    ]
+  },
+  {
+    "question": "Given Gliscor's type combination, which attacking type(s) deal no damage to it at all?",
+    "answer": "Gliscor is Ground/Flying, making it immune to Electric- and Ground-type moves.",
+    "keywords": [
+      "electric",
+      "ground"
+    ]
+  },
+  {
+    "question": "Given Bronzong's type combination, which attacking type(s) deal no damage to it at all?",
+    "answer": "Bronzong is Steel/Psychic, making it immune to Poison-type moves.",
+    "keywords": [
+      "poison"
+    ]
+  },
+  {
+    "question": "Given Gengar's type combination, which attacking type(s) deal no damage to it at all?",
+    "answer": "Gengar is Ghost/Poison, making it immune to Fighting- and Normal-type moves.",
+    "keywords": [
+      "fighting",
+      "normal"
+    ]
+  },
+  {
+    "question": "Given Flygon's type combination, which attacking type(s) deal no damage to it at all?",
+    "answer": "Flygon is Ground/Dragon, making it immune to Electric-type moves.",
+    "keywords": [
+      "electric"
+    ]
+  },
+  {
+    "question": "Given Claydol's type combination, which attacking type(s) deal no damage to it at all?",
+    "answer": "Claydol is Ground/Psychic, making it immune to Electric-type moves.",
+    "keywords": [
+      "electric"
+    ]
+  },
+  {
+    "question": "Among all Pokemon in the Dragon egg group, which has the highest base Attack?",
+    "answer": "Haxorus has the highest base Attack in the Dragon egg group at 147.",
+    "keywords": [
+      "haxorus"
+    ]
+  },
+  {
+    "question": "Among all Pokemon in the Monster egg group, which has the highest base HP?",
+    "answer": "Snorlax has the highest base HP in the Monster egg group at 160.",
+    "keywords": [
+      "snorlax"
+    ]
+  },
+  {
+    "question": "Among all Pokemon in the Water 1 egg group, which has the highest base Speed?",
+    "answer": "Kilowattrel has the highest base Speed in the Water 1 egg group at 125.",
+    "keywords": [
+      "kilowattrel"
+    ]
+  },
+  {
+    "question": "Among all Pokemon in the Bug egg group, which has the highest base Defense?",
+    "answer": "Shuckle has the highest base Defense in the Bug egg group at 230.",
+    "keywords": [
+      "shuckle"
+    ]
+  },
+  {
+    "question": "Among all Pokemon in the Fairy egg group, which has the highest base Special Attack?",
+    "answer": "Hatterene has the highest base Special Attack in the Fairy egg group at 136.",
+    "keywords": [
+      "hatterene"
+    ]
+  },
+  {
+    "question": "Among all Pokemon in the Mineral egg group, which has the highest base Defense?",
+    "answer": "Steelix has the highest base Defense in the Mineral egg group at 200.",
+    "keywords": [
+      "steelix"
+    ]
+  },
+  {
+    "question": "Among all Pokemon in the Human-Like egg group, which has the highest base Special Attack?",
+    "answer": "Alakazam has the highest base Special Attack in the Human-Like egg group at 135.",
+    "keywords": [
+      "alakazam"
+    ]
+  },
+  {
+    "question": "Among all Pokemon in the Field egg group, which has the highest base Speed?",
+    "answer": "Jolteon has the highest base Speed in the Field egg group at 130.",
+    "keywords": [
+      "jolteon"
+    ]
+  },
+  {
+    "question": "Of all Water-type Pokemon introduced in Generation III, which has the highest base Special Attack?",
+    "answer": "Kyogre has the highest base Special Attack (150) among Generation III Water-types.",
+    "keywords": [
+      "kyogre"
+    ]
+  },
+  {
+    "question": "Of all Fire-type Pokemon introduced in Generation I, which has the highest base Attack?",
+    "answer": "Flareon has the highest base Attack (130) among Generation I Fire-types.",
+    "keywords": [
+      "flareon"
+    ]
+  },
+  {
+    "question": "Of all Dragon-type Pokemon introduced in Generation IV, which has the highest base Attack?",
+    "answer": "Garchomp has the highest base Attack (130) among Generation IV Dragon-types.",
+    "keywords": [
+      "garchomp"
+    ]
+  },
+  {
+    "question": "Of all Electric-type Pokemon introduced in Generation I, which has the highest base Speed?",
+    "answer": "Electrode has the highest base Speed (150) among Generation I Electric-types.",
+    "keywords": [
+      "electrode"
+    ]
+  },
+  {
+    "question": "Of all Psychic-type Pokemon introduced in Generation I, which has the highest base Special Attack?",
+    "answer": "Mewtwo has the highest base Special Attack (154) among Generation I Psychic-types.",
+    "keywords": [
+      "mewtwo"
+    ]
+  },
+  {
+    "question": "Of all Ghost-type Pokemon introduced in Generation III, which has the highest base Speed?",
+    "answer": "Banette has the highest base Speed (65) among Generation III Ghost-types.",
+    "keywords": [
+      "banette"
+    ]
+  },
+  {
+    "question": "Of all Steel-type Pokemon introduced in Generation II, which has the highest base Defense?",
+    "answer": "Steelix has the highest base Defense (200) among Generation II Steel-types.",
+    "keywords": [
+      "steelix"
+    ]
+  },
+  {
+    "question": "Of all Ground-type Pokemon introduced in Generation V, which has the highest base Attack?",
+    "answer": "Excadrill has the highest base Attack (135) among Generation V Ground-types.",
+    "keywords": [
+      "excadrill"
+    ]
+  },
+  {
+    "question": "Of all Dark-type Pokemon introduced in Generation II, which has the highest base Attack?",
+    "answer": "Tyranitar has the highest base Attack (134) among Generation II Dark-types.",
+    "keywords": [
+      "tyranitar"
+    ]
+  },
+  {
+    "question": "Of all Ice-type Pokemon introduced in Generation IV, which has the highest base Special Attack?",
+    "answer": "Glaceon has the highest base Special Attack (130) among Generation IV Ice-types.",
+    "keywords": [
+      "glaceon"
+    ]
+  },
+  {
+    "question": "Within Bulbasaur's evolutionary line, which member has the highest base Defense?",
+    "answer": "Venusaur has the highest base Defense (83) in Bulbasaur's evolution chain.",
+    "keywords": [
+      "venusaur"
+    ]
+  },
+  {
+    "question": "Within Charmander's evolutionary line, which member has the highest base Special Attack?",
+    "answer": "Charizard has the highest base Special Attack (109) in Charmander's evolution chain.",
+    "keywords": [
+      "charizard"
+    ]
+  },
+  {
+    "question": "Within Squirtle's evolutionary line, which member has the highest base Defense?",
+    "answer": "Blastoise has the highest base Defense (100) in Squirtle's evolution chain.",
+    "keywords": [
+      "blastoise"
+    ]
+  },
+  {
+    "question": "Within Dratini's evolutionary line, which member has the highest base Attack?",
+    "answer": "Dragonite has the highest base Attack (134) in Dratini's evolution chain.",
+    "keywords": [
+      "dragonite"
+    ]
+  },
+  {
+    "question": "Within Magikarp's evolutionary line, which member has the highest base Attack?",
+    "answer": "Gyarados has the highest base Attack (125) in Magikarp's evolution chain.",
+    "keywords": [
+      "gyarados"
+    ]
+  },
+  {
+    "question": "Within Larvitar's evolutionary line, which member has the highest base Attack?",
+    "answer": "Tyranitar has the highest base Attack (134) in Larvitar's evolution chain.",
+    "keywords": [
+      "tyranitar"
+    ]
+  },
+  {
+    "question": "Within Ralts's evolutionary line, which member has the highest base Special Attack?",
+    "answer": "Gardevoir has the highest base Special Attack (125) in Ralts's evolution chain.",
+    "keywords": [
+      "gardevoir"
+    ]
+  },
+  {
+    "question": "Within Bagon's evolutionary line, which member has the highest base Attack?",
+    "answer": "Salamence has the highest base Attack (135) in Bagon's evolution chain.",
+    "keywords": [
+      "salamence"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation I Fire-type Pokemon has the highest base stat total?",
+    "answer": "Arcanine has the highest base stat total (555) among non-legendary Generation I Fire-types.",
+    "keywords": [
+      "arcanine"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation I Water-type Pokemon has the highest base stat total?",
+    "answer": "Gyarados has the highest base stat total (540) among non-legendary Generation I Water-types.",
+    "keywords": [
+      "gyarados"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation I Psychic-type Pokemon has the highest base stat total?",
+    "answer": "Exeggutor has the highest base stat total (530) among non-legendary Generation I Psychic-types.",
+    "keywords": [
+      "exeggutor"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation III Dragon-type Pokemon has the highest base stat total?",
+    "answer": "Salamence has the highest base stat total (600) among non-legendary Generation III Dragon-types.",
+    "keywords": [
+      "salamence"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation II Dark-type Pokemon has the highest base stat total?",
+    "answer": "Tyranitar has the highest base stat total (600) among non-legendary Generation II Dark-types.",
+    "keywords": [
+      "tyranitar"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the ability Levitate and are also Ghost-type? Name one example.",
+    "answer": "6 Pokemon have Levitate and are Ghost-type, for example Gastly.",
+    "keywords": [
+      "6"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the ability Intimidate and are also Water-type? Name one example.",
+    "answer": "2 Pokemon have Intimidate and are Water-type, for example Gyarados.",
+    "keywords": [
+      "2"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the ability Sturdy and are also Rock-type? Name one example.",
+    "answer": "28 Pokemon have Sturdy and are Rock-type, for example Geodude.",
+    "keywords": [
+      "28"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the ability Swift Swim and are also Water-type? Name one example.",
+    "answer": "40 Pokemon have Swift Swim and are Water-type, for example Psyduck.",
+    "keywords": [
+      "40"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the ability Chlorophyll and are also Grass-type? Name one example.",
+    "answer": "37 Pokemon have Chlorophyll and are Grass-type, for example Bulbasaur.",
+    "keywords": [
+      "37"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the ability Flash Fire and are also Fire-type? Name one example.",
+    "answer": "24 Pokemon have Flash Fire and are Fire-type, for example Vulpix.",
+    "keywords": [
+      "24"
+    ]
+  },
+  {
+    "question": "Among standard Electric-type physical moves (excluding Z-Moves and Max Moves), what is the highest base power and which move reaches it?",
+    "answer": "Bolt Strike reaches the highest base power for Electric-type physical moves at 130.",
+    "keywords": [
+      "bolt-strike"
+    ]
+  },
+  {
+    "question": "Among standard Water-type special moves (excluding Z-Moves and Max Moves), what is the highest base power and which move reaches it?",
+    "answer": "Hydro Cannon and Water Spout reach the highest base power for Water-type special moves at 150.",
+    "keywords": [
+      "hydro-cannon"
+    ]
+  },
+  {
+    "question": "Among standard Fire-type physical moves (excluding Z-Moves and Max Moves), what is the highest base power and which move reaches it?",
+    "answer": "V Create reaches the highest base power for Fire-type physical moves at 180.",
+    "keywords": [
+      "v-create"
+    ]
+  },
+  {
+    "question": "Among standard Dragon-type special moves (excluding Z-Moves and Max Moves), what is the highest base power and which move reaches it?",
+    "answer": "Eternabeam reaches the highest base power for Dragon-type special moves at 160.",
+    "keywords": [
+      "eternabeam"
+    ]
+  },
+  {
+    "question": "Among standard Ghost-type physical moves (excluding Z-Moves and Max Moves), what is the highest base power and which move reaches it?",
+    "answer": "Shadow Force reaches the highest base power for Ghost-type physical moves at 120.",
+    "keywords": [
+      "shadow-force"
+    ]
+  },
+  {
+    "question": "Among standard Fairy-type special moves (excluding Z-Moves and Max Moves), what is the highest base power and which move reaches it?",
+    "answer": "Light Of Ruin reaches the highest base power for Fairy-type special moves at 140.",
+    "keywords": [
+      "light-of-ruin"
+    ]
+  },
+  {
+    "question": "Among standard Dark-type physical moves (excluding Z-Moves and Max Moves), what is the highest base power and which move reaches it?",
+    "answer": "Hyperspace Fury reaches the highest base power for Dark-type physical moves at 100.",
+    "keywords": [
+      "hyperspace-fury"
+    ]
+  },
+  {
+    "question": "Among standard Fighting-type special moves (excluding Z-Moves and Max Moves), what is the highest base power and which move reaches it?",
+    "answer": "Focus Blast reaches the highest base power for Fighting-type special moves at 120.",
+    "keywords": [
+      "focus-blast"
+    ]
+  },
+  {
+    "question": "Among standard Ice-type physical moves (excluding Z-Moves and Max Moves), what is the highest base power and which move reaches it?",
+    "answer": "Freeze Shock reaches the highest base power for Ice-type physical moves at 140.",
+    "keywords": [
+      "freeze-shock"
+    ]
+  },
+  {
+    "question": "Among standard Grass-type physical moves (excluding Z-Moves and Max Moves), what is the highest base power and which move reaches it?",
+    "answer": "Solar Blade reaches the highest base power for Grass-type physical moves at 125.",
+    "keywords": [
+      "solar-blade"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the Slow growth rate need to reach level 100?",
+    "answer": "A Slow growth-rate Pokemon needs 1,250,000 total experience to reach level 100.",
+    "keywords": [
+      "1250000"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the Medium Slow growth rate need to reach level 100?",
+    "answer": "A Medium Slow growth-rate Pokemon needs 1,059,860 total experience to reach level 100.",
+    "keywords": [
+      "1059860"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the Medium Fast growth rate need to reach level 100?",
+    "answer": "A Medium Fast growth-rate Pokemon needs 1,000,000 total experience to reach level 100.",
+    "keywords": [
+      "1000000"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the Fast growth rate need to reach level 100?",
+    "answer": "A Fast growth-rate Pokemon needs 800,000 total experience to reach level 100.",
+    "keywords": [
+      "800000"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the Erratic growth rate need to reach level 100?",
+    "answer": "An Erratic growth-rate Pokemon needs 600,000 total experience to reach level 100.",
+    "keywords": [
+      "600000"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the Fluctuating growth rate need to reach level 100?",
+    "answer": "A Fluctuating growth-rate Pokemon needs 1,640,000 total experience to reach level 100.",
+    "keywords": [
+      "1640000"
+    ]
+  },
+  {
+    "question": "Which nature raises Attack while lowering Special Attack?",
+    "answer": "The Adamant nature raises Attack and lowers Special Attack.",
+    "keywords": [
+      "adamant"
+    ]
+  },
+  {
+    "question": "Which nature raises Attack while lowering Defense?",
+    "answer": "The Lonely nature raises Attack and lowers Defense.",
+    "keywords": [
+      "lonely"
+    ]
+  },
+  {
+    "question": "Which nature raises Speed while lowering Special Attack?",
+    "answer": "The Jolly nature raises Speed and lowers Special Attack.",
+    "keywords": [
+      "jolly"
+    ]
+  },
+  {
+    "question": "Which nature raises Special Attack while lowering Attack?",
+    "answer": "The Modest nature raises Special Attack and lowers Attack.",
+    "keywords": [
+      "modest"
+    ]
+  },
+  {
+    "question": "Which nature raises Defense while lowering Special Attack?",
+    "answer": "The Impish nature raises Defense and lowers Special Attack.",
+    "keywords": [
+      "impish"
+    ]
+  },
+  {
+    "question": "What is the highest Natural Gift base power that any single berry can provide?",
+    "answer": "The highest Natural Gift base power from a berry is 100.",
+    "keywords": [
+      "100"
+    ]
+  },
+  {
+    "question": "How many Pokemon live in the 'cave' habitat and are Rock-type?",
+    "answer": "5 Pokemon have the cave habitat and are Rock-type.",
+    "keywords": [
+      "5"
+    ]
+  },
+  {
+    "question": "How many Pokemon live in the 'sea' habitat and are Water-type?",
+    "answer": "38 Pokemon have the sea habitat and are Water-type.",
+    "keywords": [
+      "38"
+    ]
+  },
+  {
+    "question": "How many Pokemon live in the 'forest' habitat and are Bug-type?",
+    "answer": "29 Pokemon have the forest habitat and are Bug-type.",
+    "keywords": [
+      "29"
+    ]
+  },
+  {
+    "question": "How many Pokemon live in the 'mountain' habitat and are Rock-type?",
+    "answer": "12 Pokemon have the mountain habitat and are Rock-type.",
+    "keywords": [
+      "12"
+    ]
+  },
+  {
+    "question": "How many Pokemon live in the 'waters edge' habitat and are Water-type?",
+    "answer": "38 Pokemon have the waters edge habitat and are Water-type.",
+    "keywords": [
+      "38"
+    ]
+  },
+  {
+    "question": "How many Generation I Pokemon have the body color red?",
+    "answer": "16 Generation I Pokemon are classified as red.",
+    "keywords": [
+      "16"
+    ]
+  },
+  {
+    "question": "How many Generation I Pokemon have the body color blue?",
+    "answer": "25 Generation I Pokemon are classified as blue.",
+    "keywords": [
+      "25"
+    ]
+  },
+  {
+    "question": "How many Generation I Pokemon have the body color green?",
+    "answer": "9 Generation I Pokemon are classified as green.",
+    "keywords": [
+      "9"
+    ]
+  },
+  {
+    "question": "What is the heaviest Pokemon in the Dragon egg group, and how much does it weigh?",
+    "answer": "Tyrantrum is the heaviest in the Dragon egg group at 270 kg.",
+    "keywords": [
+      "tyrantrum"
+    ]
+  },
+  {
+    "question": "What is the heaviest Pokemon in the Water 1 egg group, and how much does it weigh?",
+    "answer": "Clodsire is the heaviest in the Water 1 egg group at 223 kg.",
+    "keywords": [
+      "clodsire"
+    ]
+  },
+  {
+    "question": "What is the heaviest Pokemon in the Mineral egg group, and how much does it weigh?",
+    "answer": "Copperajah is the heaviest in the Mineral egg group at 650 kg.",
+    "keywords": [
+      "copperajah"
+    ]
+  },
+  {
+    "question": "Across every Fire-type Pokemon, which one is the tallest?",
+    "answer": "Ho-Oh is the tallest Fire-type at 3.8 m.",
+    "keywords": [
+      "ho-oh"
+    ]
+  },
+  {
+    "question": "Across every Electric-type Pokemon, which one is the heaviest?",
+    "answer": "Raging Bolt is the heaviest Electric-type at 480 kg.",
+    "keywords": [
+      "raging-bolt"
+    ]
+  },
+  {
+    "question": "Across every Ice-type Pokemon, which one is the heaviest?",
+    "answer": "Glastrier is the heaviest Ice-type at 800 kg.",
+    "keywords": [
+      "glastrier"
+    ]
+  },
+  {
+    "question": "Across every Ghost-type Pokemon, which one is the heaviest?",
+    "answer": "Giratina Altered is the heaviest Ghost-type at 750 kg.",
+    "keywords": [
+      "giratina-altered"
+    ]
+  },
+  {
+    "question": "Among all Pokemon flagged as legendary, which has the highest base Attack?",
+    "answer": "Regigigas has the highest base Attack (160) among legendary Pokemon.",
+    "keywords": [
+      "regigigas"
+    ]
+  },
+  {
+    "question": "Among all Pokemon flagged as legendary, which has the highest base Special Attack?",
+    "answer": "Mewtwo has the highest base Special Attack (154) among legendary Pokemon.",
+    "keywords": [
+      "mewtwo"
+    ]
+  },
+  {
+    "question": "Among all Pokemon flagged as legendary, which has the highest base Speed?",
+    "answer": "Regieleki has the highest base Speed (200) among legendary Pokemon.",
+    "keywords": [
+      "regieleki"
+    ]
+  },
+  {
+    "question": "Among all Pokemon flagged as legendary, which has the highest base Defense?",
+    "answer": "Regirock has the highest base Defense (200) among legendary Pokemon.",
+    "keywords": [
+      "regirock"
+    ]
+  },
+  {
+    "question": "Among all Pokemon flagged as legendary, which has the highest base HP?",
+    "answer": "Regidrago has the highest base HP (200) among legendary Pokemon.",
+    "keywords": [
+      "regidrago"
+    ]
+  },
+  {
+    "question": "Which Generation II Steel-type Pokemon evolve from a species that debuted in Generation I?",
+    "answer": "Steelix, Scizor — Generation II Steel-type evolution(s) of a Generation I species.",
+    "keywords": [
+      "steelix"
+    ]
+  },
+  {
+    "question": "Which Generation IV Electric-type Pokemon evolve from a species that debuted in Generation I?",
+    "answer": "Magnezone, Electivire — Generation IV Electric-type evolution(s) of a Generation I species.",
+    "keywords": [
+      "magnezone"
+    ]
+  },
+  {
+    "question": "Which Generation II Dark-type Pokemon evolve from a species that debuted in Generation I?",
+    "answer": "Umbreon — Generation II Dark-type evolution(s) of a Generation I species.",
+    "keywords": [
+      "umbreon"
+    ]
+  },
+  {
+    "question": "Which Generation IV Ghost-type Pokemon evolve from a species that debuted in Generation II?",
+    "answer": "Mismagius — Generation IV Ghost-type evolution(s) of a Generation II species.",
+    "keywords": [
+      "mismagius"
+    ]
+  },
+  {
+    "question": "Considering Ferrothorn's full type combination, how many of the 18 attacking types does it take reduced or no damage from?",
+    "answer": "Ferrothorn (Grass/Steel) resists 9 types and is immune to 1, so 10 of the 18 attacking types do reduced or no damage.",
+    "keywords": [
+      "10"
+    ]
+  },
+  {
+    "question": "Considering Steelix's full type combination, how many of the 18 attacking types does it take reduced or no damage from?",
+    "answer": "Steelix (Steel/Ground) resists 8 types and is immune to 2, so 10 of the 18 attacking types do reduced or no damage.",
+    "keywords": [
+      "10"
+    ]
+  },
+  {
+    "question": "Considering Aggron's full type combination, how many of the 18 attacking types does it take reduced or no damage from?",
+    "answer": "Aggron (Steel/Rock) resists 8 types and is immune to 1, so 9 of the 18 attacking types do reduced or no damage.",
+    "keywords": [
+      "9"
+    ]
+  }
+]

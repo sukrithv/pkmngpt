@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pkmngpt"
+version = "0.1.0"
+description = "Retrieval-augmented generation over live PokeAPI data, with local Ollama or Claude generation and a DSPy eval harness."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv>=1.0.1",
+    # vector store + embeddings
+    "chromadb==0.5.23",
+    "sentence-transformers==3.3.1",
+    # document parsing
+    "pypdf==5.1.0",
+    # LLM backends
+    "ollama==0.4.4",
+    "anthropic==0.40.0",
+    # evaluation
+    "dspy==3.3.1",
+    "tqdm>=4.67.1",
+    "pandas>=3.0.5",
+    "langchain-text-splitters>=1.1.2",
+    "mwparserfromhell>=0.7.2",
+    "rapidfuzz>=3.14.6",
+    "ruff>=0.16.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1"]
+
+[tool.setuptools]
+py-modules = ["config"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]

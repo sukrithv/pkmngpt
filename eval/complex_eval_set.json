@@ -1,0 +1,1306 @@
+[
+  {
+    "question": "Which Generation I Fire-type Pokemon has the highest base Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='fire' AND s.identifier='attack' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "flareon"
+      ]
+    ],
+    "expected_answer": "Flareon has the highest base Attack (130) among Generation I Fire-types.",
+    "keywords": [
+      "flareon"
+    ]
+  },
+  {
+    "question": "Which Generation I Water-type Pokemon has the highest base Special Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='water' AND s.identifier='special-attack' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "omastar"
+      ]
+    ],
+    "expected_answer": "Omastar has the highest base Special Attack (115) among Generation I Water-types.",
+    "keywords": [
+      "omastar"
+    ]
+  },
+  {
+    "question": "Which Generation I Grass-type Pokemon has the highest base Defense?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='grass' AND s.identifier='defense' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "tangela"
+      ]
+    ],
+    "expected_answer": "Tangela has the highest base Defense (115) among Generation I Grass-types.",
+    "keywords": [
+      "tangela"
+    ]
+  },
+  {
+    "question": "Which Generation I Electric-type Pokemon has the highest base Speed?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='electric' AND s.identifier='speed' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "electrode"
+      ]
+    ],
+    "expected_answer": "Electrode has the highest base Speed (150) among Generation I Electric-types.",
+    "keywords": [
+      "electrode"
+    ]
+  },
+  {
+    "question": "Which Generation I Psychic-type Pokemon has the highest base Special Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='psychic' AND s.identifier='special-attack' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "mewtwo"
+      ]
+    ],
+    "expected_answer": "Mewtwo has the highest base Special Attack (154) among Generation I Psychic-types.",
+    "keywords": [
+      "mewtwo"
+    ]
+  },
+  {
+    "question": "Which Generation III Water-type Pokemon has the highest base Special Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='water' AND s.identifier='special-attack' AND ps.generation_id=3 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "kyogre"
+      ]
+    ],
+    "expected_answer": "Kyogre has the highest base Special Attack (150) among Generation III Water-types.",
+    "keywords": [
+      "kyogre"
+    ]
+  },
+  {
+    "question": "Which Generation IV Dragon-type Pokemon has the highest base Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='dragon' AND s.identifier='attack' AND ps.generation_id=4 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "garchomp"
+      ]
+    ],
+    "expected_answer": "Garchomp has the highest base Attack (130) among Generation IV Dragon-types.",
+    "keywords": [
+      "garchomp"
+    ]
+  },
+  {
+    "question": "Which Generation II Steel-type Pokemon has the highest base Defense?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='steel' AND s.identifier='defense' AND ps.generation_id=2 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "steelix"
+      ]
+    ],
+    "expected_answer": "Steelix has the highest base Defense (200) among Generation II Steel-types.",
+    "keywords": [
+      "steelix"
+    ]
+  },
+  {
+    "question": "Which Generation II Dark-type Pokemon has the highest base Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='dark' AND s.identifier='attack' AND ps.generation_id=2 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "tyranitar"
+      ]
+    ],
+    "expected_answer": "Tyranitar has the highest base Attack (134) among Generation II Dark-types.",
+    "keywords": [
+      "tyranitar"
+    ]
+  },
+  {
+    "question": "Which Generation III Ghost-type Pokemon has the highest base Speed?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='ghost' AND s.identifier='speed' AND ps.generation_id=3 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "banette"
+      ]
+    ],
+    "expected_answer": "Banette has the highest base Speed (65) among Generation III Ghost-types.",
+    "keywords": [
+      "banette"
+    ]
+  },
+  {
+    "question": "Which Generation IV Ice-type Pokemon has the highest base Special Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='ice' AND s.identifier='special-attack' AND ps.generation_id=4 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "glaceon"
+      ]
+    ],
+    "expected_answer": "Glaceon has the highest base Special Attack (130) among Generation IV Ice-types.",
+    "keywords": [
+      "glaceon"
+    ]
+  },
+  {
+    "question": "Which Generation I Fighting-type Pokemon has the highest base Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='fighting' AND s.identifier='attack' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "machamp"
+      ]
+    ],
+    "expected_answer": "Machamp has the highest base Attack (130) among Generation I Fighting-types.",
+    "keywords": [
+      "machamp"
+    ]
+  },
+  {
+    "question": "Which Generation I Rock-type Pokemon has the highest base Defense?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='rock' AND s.identifier='defense' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "onix"
+      ]
+    ],
+    "expected_answer": "Onix has the highest base Defense (160) among Generation I Rock-types.",
+    "keywords": [
+      "onix"
+    ]
+  },
+  {
+    "question": "Which Generation I Ground-type Pokemon has the highest base Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='ground' AND s.identifier='attack' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "rhydon"
+      ]
+    ],
+    "expected_answer": "Rhydon has the highest base Attack (130) among Generation I Ground-types.",
+    "keywords": [
+      "rhydon"
+    ]
+  },
+  {
+    "question": "Which Generation I Normal-type Pokemon has the highest base HP?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='normal' AND s.identifier='hp' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "chansey"
+      ]
+    ],
+    "expected_answer": "Chansey has the highest base HP (250) among Generation I Normal-types.",
+    "keywords": [
+      "chansey"
+    ]
+  },
+  {
+    "question": "Which Generation I Bug-type Pokemon has the highest base Speed?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='bug' AND s.identifier='speed' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "scyther"
+      ]
+    ],
+    "expected_answer": "Scyther has the highest base Speed (105) among Generation I Bug-types.",
+    "keywords": [
+      "scyther"
+    ]
+  },
+  {
+    "question": "Which Generation I Poison-type Pokemon has the highest base Special Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='poison' AND s.identifier='special-attack' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "gengar"
+      ]
+    ],
+    "expected_answer": "Gengar has the highest base Special Attack (130) among Generation I Poison-types.",
+    "keywords": [
+      "gengar"
+    ]
+  },
+  {
+    "question": "Which Generation I Flying-type Pokemon has the highest base Speed?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='flying' AND s.identifier='speed' AND ps.generation_id=1 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "aerodactyl"
+      ]
+    ],
+    "expected_answer": "Aerodactyl has the highest base Speed (130) among Generation I Flying-types.",
+    "keywords": [
+      "aerodactyl"
+    ]
+  },
+  {
+    "question": "Which Generation VI Fairy-type Pokemon has the highest base Special Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='fairy' AND s.identifier='special-attack' AND ps.generation_id=6 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "xerneas"
+      ]
+    ],
+    "expected_answer": "Xerneas has the highest base Special Attack (131) among Generation VI Fairy-types.",
+    "keywords": [
+      "xerneas"
+    ]
+  },
+  {
+    "question": "Which Generation III Fire-type Pokemon has the highest base Special Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE t.identifier='fire' AND s.identifier='special-attack' AND ps.generation_id=3 AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "blaziken"
+      ]
+    ],
+    "expected_answer": "Blaziken has the highest base Special Attack (110) among Generation III Fire-types.",
+    "keywords": [
+      "blaziken"
+    ]
+  },
+  {
+    "question": "How many Generation I Pokemon are Water-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='water' AND ps.generation_id=1 AND p.is_default=1",
+    "gold_answer": [
+      [
+        32
+      ]
+    ],
+    "expected_answer": "There are 32 Generation I Water-type Pokemon.",
+    "keywords": [
+      "32"
+    ]
+  },
+  {
+    "question": "How many Generation I Pokemon are Fire-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='fire' AND ps.generation_id=1 AND p.is_default=1",
+    "gold_answer": [
+      [
+        12
+      ]
+    ],
+    "expected_answer": "There are 12 Generation I Fire-type Pokemon.",
+    "keywords": [
+      "12"
+    ]
+  },
+  {
+    "question": "How many Generation I Pokemon are Grass-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='grass' AND ps.generation_id=1 AND p.is_default=1",
+    "gold_answer": [
+      [
+        14
+      ]
+    ],
+    "expected_answer": "There are 14 Generation I Grass-type Pokemon.",
+    "keywords": [
+      "14"
+    ]
+  },
+  {
+    "question": "How many Generation I Pokemon are Normal-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='normal' AND ps.generation_id=1 AND p.is_default=1",
+    "gold_answer": [
+      [
+        22
+      ]
+    ],
+    "expected_answer": "There are 22 Generation I Normal-type Pokemon.",
+    "keywords": [
+      "22"
+    ]
+  },
+  {
+    "question": "How many Generation I Pokemon are Bug-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='bug' AND ps.generation_id=1 AND p.is_default=1",
+    "gold_answer": [
+      [
+        12
+      ]
+    ],
+    "expected_answer": "There are 12 Generation I Bug-type Pokemon.",
+    "keywords": [
+      "12"
+    ]
+  },
+  {
+    "question": "How many Generation III Pokemon are Water-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='water' AND ps.generation_id=3 AND p.is_default=1",
+    "gold_answer": [
+      [
+        28
+      ]
+    ],
+    "expected_answer": "There are 28 Generation III Water-type Pokemon.",
+    "keywords": [
+      "28"
+    ]
+  },
+  {
+    "question": "How many Generation I Pokemon are Psychic-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='psychic' AND ps.generation_id=1 AND p.is_default=1",
+    "gold_answer": [
+      [
+        14
+      ]
+    ],
+    "expected_answer": "There are 14 Generation I Psychic-type Pokemon.",
+    "keywords": [
+      "14"
+    ]
+  },
+  {
+    "question": "How many Generation I Pokemon are Poison-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='poison' AND ps.generation_id=1 AND p.is_default=1",
+    "gold_answer": [
+      [
+        33
+      ]
+    ],
+    "expected_answer": "There are 33 Generation I Poison-type Pokemon.",
+    "keywords": [
+      "33"
+    ]
+  },
+  {
+    "question": "How many Generation IV Pokemon are Dragon-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='dragon' AND ps.generation_id=4 AND p.is_default=1",
+    "gold_answer": [
+      [
+        6
+      ]
+    ],
+    "expected_answer": "There are 6 Generation IV Dragon-type Pokemon.",
+    "keywords": [
+      "6"
+    ]
+  },
+  {
+    "question": "How many Generation II Pokemon are Steel-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='steel' AND ps.generation_id=2 AND p.is_default=1",
+    "gold_answer": [
+      [
+        4
+      ]
+    ],
+    "expected_answer": "There are 4 Generation II Steel-type Pokemon.",
+    "keywords": [
+      "4"
+    ]
+  },
+  {
+    "question": "How many Generation II Pokemon are Dark-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='dark' AND ps.generation_id=2 AND p.is_default=1",
+    "gold_answer": [
+      [
+        6
+      ]
+    ],
+    "expected_answer": "There are 6 Generation II Dark-type Pokemon.",
+    "keywords": [
+      "6"
+    ]
+  },
+  {
+    "question": "How many Generation III Pokemon are Ghost-type?",
+    "gold_sql": "SELECT COUNT(*) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE t.identifier='ghost' AND ps.generation_id=3 AND p.is_default=1",
+    "gold_answer": [
+      [
+        6
+      ]
+    ],
+    "expected_answer": "There are 6 Generation III Ghost-type Pokemon.",
+    "keywords": [
+      "6"
+    ]
+  },
+  {
+    "question": "What is the heaviest Pokemon in the dragon egg group?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id WHERE eg.identifier='dragon' AND p.is_default=1 ORDER BY p.weight DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "tyrantrum"
+      ]
+    ],
+    "expected_answer": "Tyrantrum is the heaviest in the dragon egg group at 270 kg.",
+    "keywords": [
+      "tyrantrum"
+    ]
+  },
+  {
+    "question": "What is the heaviest Pokemon in the monster egg group?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id WHERE eg.identifier='monster' AND p.is_default=1 ORDER BY p.weight DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "avalugg"
+      ]
+    ],
+    "expected_answer": "Avalugg is the heaviest in the monster egg group at 505 kg.",
+    "keywords": [
+      "avalugg"
+    ]
+  },
+  {
+    "question": "What is the heaviest Pokemon in the water1 egg group?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id WHERE eg.identifier='water1' AND p.is_default=1 ORDER BY p.weight DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "clodsire"
+      ]
+    ],
+    "expected_answer": "Clodsire is the heaviest in the water1 egg group at 223 kg.",
+    "keywords": [
+      "clodsire"
+    ]
+  },
+  {
+    "question": "What is the heaviest Pokemon in the mineral egg group?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id WHERE eg.identifier='mineral' AND p.is_default=1 ORDER BY p.weight DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "copperajah"
+      ]
+    ],
+    "expected_answer": "Copperajah is the heaviest in the mineral egg group at 650 kg.",
+    "keywords": [
+      "copperajah"
+    ]
+  },
+  {
+    "question": "Which Pokemon in the dragon egg group has the highest base Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE eg.identifier='dragon' AND s.identifier='attack' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "haxorus"
+      ]
+    ],
+    "expected_answer": "Haxorus has the highest base Attack (147) in the dragon egg group.",
+    "keywords": [
+      "haxorus"
+    ]
+  },
+  {
+    "question": "Which Pokemon in the monster egg group has the highest base HP?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE eg.identifier='monster' AND s.identifier='hp' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "snorlax"
+      ]
+    ],
+    "expected_answer": "Snorlax has the highest base HP (160) in the monster egg group.",
+    "keywords": [
+      "snorlax"
+    ]
+  },
+  {
+    "question": "Which Pokemon in the water1 egg group has the highest base Speed?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE eg.identifier='water1' AND s.identifier='speed' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "kilowattrel"
+      ]
+    ],
+    "expected_answer": "Kilowattrel has the highest base Speed (125) in the water1 egg group.",
+    "keywords": [
+      "kilowattrel"
+    ]
+  },
+  {
+    "question": "Which Pokemon in the bug egg group has the highest base Defense?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE eg.identifier='bug' AND s.identifier='defense' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "shuckle"
+      ]
+    ],
+    "expected_answer": "Shuckle has the highest base Defense (230) in the bug egg group.",
+    "keywords": [
+      "shuckle"
+    ]
+  },
+  {
+    "question": "Which Pokemon in the fairy egg group has the highest base Special Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE eg.identifier='fairy' AND s.identifier='special-attack' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "hatterene"
+      ]
+    ],
+    "expected_answer": "Hatterene has the highest base Special Attack (136) in the fairy egg group.",
+    "keywords": [
+      "hatterene"
+    ]
+  },
+  {
+    "question": "Which Pokemon in the humanshape egg group has the highest base Special Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE eg.identifier='humanshape' AND s.identifier='special-attack' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "alakazam"
+      ]
+    ],
+    "expected_answer": "Alakazam has the highest base Special Attack (135) in the humanshape egg group.",
+    "keywords": [
+      "alakazam"
+    ]
+  },
+  {
+    "question": "Which Pokemon in the mineral egg group has the highest base Defense?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE eg.identifier='mineral' AND s.identifier='defense' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "steelix"
+      ]
+    ],
+    "expected_answer": "Steelix has the highest base Defense (200) in the mineral egg group.",
+    "keywords": [
+      "steelix"
+    ]
+  },
+  {
+    "question": "Which Pokemon in the ground egg group has the highest base Speed?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE eg.identifier='ground' AND s.identifier='speed' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "jolteon"
+      ]
+    ],
+    "expected_answer": "Jolteon has the highest base Speed (130) in the ground egg group.",
+    "keywords": [
+      "jolteon"
+    ]
+  },
+  {
+    "question": "Which Pokemon in the water2 egg group has the highest base Attack?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE eg.identifier='water2' AND s.identifier='attack' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "gyarados"
+      ]
+    ],
+    "expected_answer": "Gyarados has the highest base Attack (125) in the water2 egg group.",
+    "keywords": [
+      "gyarados"
+    ]
+  },
+  {
+    "question": "Which Pokemon in the plant egg group has the highest base Special Defense?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_egg_groups peg ON ps.id=peg.species_id JOIN egg_groups eg ON peg.egg_group_id=eg.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE eg.identifier='plant' AND s.identifier='special-defense' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "eldegoss"
+      ]
+    ],
+    "expected_answer": "Eldegoss has the highest base Special Defense (120) in the plant egg group.",
+    "keywords": [
+      "eldegoss"
+    ]
+  },
+  {
+    "question": "Which attacking type(s) deal 4x damage to Charizard?",
+    "gold_sql": "WITH tt AS (SELECT MAX(CASE WHEN pt.slot=1 THEN pt.type_id END) t1, MAX(CASE WHEN pt.slot=2 THEN pt.type_id END) t2 FROM pokemon_types pt JOIN pokemon p ON pt.pokemon_id=p.id JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='charizard' AND p.is_default=1) SELECT atk.identifier FROM types atk JOIN type_efficacy te1 ON te1.damage_type_id=atk.id JOIN type_efficacy te2 ON te2.damage_type_id=atk.id JOIN tt ON te1.target_type_id=tt.t1 AND te2.target_type_id=tt.t2 WHERE atk.id<=18 AND te1.damage_factor*te2.damage_factor=40000 ORDER BY atk.identifier",
+    "gold_answer": [
+      [
+        "rock"
+      ]
+    ],
+    "expected_answer": "Rock-type moves deal 4x damage to Charizard.",
+    "keywords": [
+      "rock"
+    ]
+  },
+  {
+    "question": "Which attacking type(s) deal 4x damage to Gyarados?",
+    "gold_sql": "WITH tt AS (SELECT MAX(CASE WHEN pt.slot=1 THEN pt.type_id END) t1, MAX(CASE WHEN pt.slot=2 THEN pt.type_id END) t2 FROM pokemon_types pt JOIN pokemon p ON pt.pokemon_id=p.id JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='gyarados' AND p.is_default=1) SELECT atk.identifier FROM types atk JOIN type_efficacy te1 ON te1.damage_type_id=atk.id JOIN type_efficacy te2 ON te2.damage_type_id=atk.id JOIN tt ON te1.target_type_id=tt.t1 AND te2.target_type_id=tt.t2 WHERE atk.id<=18 AND te1.damage_factor*te2.damage_factor=40000 ORDER BY atk.identifier",
+    "gold_answer": [
+      [
+        "electric"
+      ]
+    ],
+    "expected_answer": "Electric-type moves deal 4x damage to Gyarados.",
+    "keywords": [
+      "electric"
+    ]
+  },
+  {
+    "question": "Which attacking type(s) deal 4x damage to Dragonite?",
+    "gold_sql": "WITH tt AS (SELECT MAX(CASE WHEN pt.slot=1 THEN pt.type_id END) t1, MAX(CASE WHEN pt.slot=2 THEN pt.type_id END) t2 FROM pokemon_types pt JOIN pokemon p ON pt.pokemon_id=p.id JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='dragonite' AND p.is_default=1) SELECT atk.identifier FROM types atk JOIN type_efficacy te1 ON te1.damage_type_id=atk.id JOIN type_efficacy te2 ON te2.damage_type_id=atk.id JOIN tt ON te1.target_type_id=tt.t1 AND te2.target_type_id=tt.t2 WHERE atk.id<=18 AND te1.damage_factor*te2.damage_factor=40000 ORDER BY atk.identifier",
+    "gold_answer": [
+      [
+        "ice"
+      ]
+    ],
+    "expected_answer": "Ice-type moves deal 4x damage to Dragonite.",
+    "keywords": [
+      "ice"
+    ]
+  },
+  {
+    "question": "Which attacking type(s) deal 4x damage to Aggron?",
+    "gold_sql": "WITH tt AS (SELECT MAX(CASE WHEN pt.slot=1 THEN pt.type_id END) t1, MAX(CASE WHEN pt.slot=2 THEN pt.type_id END) t2 FROM pokemon_types pt JOIN pokemon p ON pt.pokemon_id=p.id JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='aggron' AND p.is_default=1) SELECT atk.identifier FROM types atk JOIN type_efficacy te1 ON te1.damage_type_id=atk.id JOIN type_efficacy te2 ON te2.damage_type_id=atk.id JOIN tt ON te1.target_type_id=tt.t1 AND te2.target_type_id=tt.t2 WHERE atk.id<=18 AND te1.damage_factor*te2.damage_factor=40000 ORDER BY atk.identifier",
+    "gold_answer": [
+      [
+        "fighting"
+      ],
+      [
+        "ground"
+      ]
+    ],
+    "expected_answer": "Fighting and Ground-type moves deal 4x damage to Aggron.",
+    "keywords": [
+      "fighting",
+      "ground"
+    ]
+  },
+  {
+    "question": "Which attacking type(s) deal 4x damage to Salamence?",
+    "gold_sql": "WITH tt AS (SELECT MAX(CASE WHEN pt.slot=1 THEN pt.type_id END) t1, MAX(CASE WHEN pt.slot=2 THEN pt.type_id END) t2 FROM pokemon_types pt JOIN pokemon p ON pt.pokemon_id=p.id JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='salamence' AND p.is_default=1) SELECT atk.identifier FROM types atk JOIN type_efficacy te1 ON te1.damage_type_id=atk.id JOIN type_efficacy te2 ON te2.damage_type_id=atk.id JOIN tt ON te1.target_type_id=tt.t1 AND te2.target_type_id=tt.t2 WHERE atk.id<=18 AND te1.damage_factor*te2.damage_factor=40000 ORDER BY atk.identifier",
+    "gold_answer": [
+      [
+        "ice"
+      ]
+    ],
+    "expected_answer": "Ice-type moves deal 4x damage to Salamence.",
+    "keywords": [
+      "ice"
+    ]
+  },
+  {
+    "question": "Which attacking type(s) deal 4x damage to Tyranitar?",
+    "gold_sql": "WITH tt AS (SELECT MAX(CASE WHEN pt.slot=1 THEN pt.type_id END) t1, MAX(CASE WHEN pt.slot=2 THEN pt.type_id END) t2 FROM pokemon_types pt JOIN pokemon p ON pt.pokemon_id=p.id JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='tyranitar' AND p.is_default=1) SELECT atk.identifier FROM types atk JOIN type_efficacy te1 ON te1.damage_type_id=atk.id JOIN type_efficacy te2 ON te2.damage_type_id=atk.id JOIN tt ON te1.target_type_id=tt.t1 AND te2.target_type_id=tt.t2 WHERE atk.id<=18 AND te1.damage_factor*te2.damage_factor=40000 ORDER BY atk.identifier",
+    "gold_answer": [
+      [
+        "fighting"
+      ]
+    ],
+    "expected_answer": "Fighting-type moves deal 4x damage to Tyranitar.",
+    "keywords": [
+      "fighting"
+    ]
+  },
+  {
+    "question": "Which attacking type(s) deal 4x damage to Garchomp?",
+    "gold_sql": "WITH tt AS (SELECT MAX(CASE WHEN pt.slot=1 THEN pt.type_id END) t1, MAX(CASE WHEN pt.slot=2 THEN pt.type_id END) t2 FROM pokemon_types pt JOIN pokemon p ON pt.pokemon_id=p.id JOIN pokemon_species ps ON p.species_id=ps.id WHERE ps.identifier='garchomp' AND p.is_default=1) SELECT atk.identifier FROM types atk JOIN type_efficacy te1 ON te1.damage_type_id=atk.id JOIN type_efficacy te2 ON te2.damage_type_id=atk.id JOIN tt ON te1.target_type_id=tt.t1 AND te2.target_type_id=tt.t2 WHERE atk.id<=18 AND te1.damage_factor*te2.damage_factor=40000 ORDER BY atk.identifier",
+    "gold_answer": [
+      [
+        "ice"
+      ]
+    ],
+    "expected_answer": "Ice-type moves deal 4x damage to Garchomp.",
+    "keywords": [
+      "ice"
+    ]
+  },
+  {
+    "question": "What is the strongest Electric-type physical move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='electric' AND mdc.identifier='physical' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "bolt-strike"
+      ]
+    ],
+    "expected_answer": "Bolt Strike is the strongest Electric-type physical move at 130.0 base power.",
+    "keywords": [
+      "bolt-strike"
+    ]
+  },
+  {
+    "question": "What is the strongest Water-type special move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='water' AND mdc.identifier='special' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "hydro-cannon"
+      ]
+    ],
+    "expected_answer": "Hydro Cannon is the strongest Water-type special move at 150.0 base power.",
+    "keywords": [
+      "hydro-cannon"
+    ]
+  },
+  {
+    "question": "What is the strongest Fire-type special move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='fire' AND mdc.identifier='special' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "blast-burn"
+      ]
+    ],
+    "expected_answer": "Blast Burn is the strongest Fire-type special move at 150.0 base power.",
+    "keywords": [
+      "blast-burn"
+    ]
+  },
+  {
+    "question": "What is the strongest Dragon-type special move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='dragon' AND mdc.identifier='special' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "eternabeam"
+      ]
+    ],
+    "expected_answer": "Eternabeam is the strongest Dragon-type special move at 160.0 base power.",
+    "keywords": [
+      "eternabeam"
+    ]
+  },
+  {
+    "question": "What is the strongest Ghost-type physical move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='ghost' AND mdc.identifier='physical' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "shadow-force"
+      ]
+    ],
+    "expected_answer": "Shadow Force is the strongest Ghost-type physical move at 120.0 base power.",
+    "keywords": [
+      "shadow-force"
+    ]
+  },
+  {
+    "question": "What is the strongest Dark-type physical move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='dark' AND mdc.identifier='physical' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "hyperspace-fury"
+      ]
+    ],
+    "expected_answer": "Hyperspace Fury is the strongest Dark-type physical move at 100.0 base power.",
+    "keywords": [
+      "hyperspace-fury"
+    ]
+  },
+  {
+    "question": "What is the strongest Ice-type special move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='ice' AND mdc.identifier='special' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "ice-burn"
+      ]
+    ],
+    "expected_answer": "Ice Burn is the strongest Ice-type special move at 140.0 base power.",
+    "keywords": [
+      "ice-burn"
+    ]
+  },
+  {
+    "question": "What is the strongest Fighting-type physical move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='fighting' AND mdc.identifier='physical' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "focus-punch"
+      ]
+    ],
+    "expected_answer": "Focus Punch is the strongest Fighting-type physical move at 150.0 base power.",
+    "keywords": [
+      "focus-punch"
+    ]
+  },
+  {
+    "question": "What is the strongest Rock-type physical move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='rock' AND mdc.identifier='physical' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "head-smash"
+      ]
+    ],
+    "expected_answer": "Head Smash is the strongest Rock-type physical move at 150.0 base power.",
+    "keywords": [
+      "head-smash"
+    ]
+  },
+  {
+    "question": "What is the strongest Normal-type physical move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='normal' AND mdc.identifier='physical' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "explosion"
+      ]
+    ],
+    "expected_answer": "Explosion is the strongest Normal-type physical move at 250.0 base power.",
+    "keywords": [
+      "explosion"
+    ]
+  },
+  {
+    "question": "What is the strongest Grass-type special move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='grass' AND mdc.identifier='special' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "chloroblast"
+      ]
+    ],
+    "expected_answer": "Chloroblast is the strongest Grass-type special move at 150.0 base power.",
+    "keywords": [
+      "chloroblast"
+    ]
+  },
+  {
+    "question": "What is the strongest Psychic-type special move by base power?",
+    "gold_sql": "SELECT m.identifier FROM moves m JOIN types t ON m.type_id=t.id JOIN move_damage_classes mdc ON m.damage_class_id=mdc.id WHERE t.identifier='psychic' AND mdc.identifier='special' AND m.power IS NOT NULL AND m.pp!=1 AND m.identifier NOT LIKE 'max-%' AND m.identifier NOT LIKE 'g-max-%' ORDER BY m.power DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "prismatic-laser"
+      ]
+    ],
+    "expected_answer": "Prismatic Laser is the strongest Psychic-type special move at 160.0 base power.",
+    "keywords": [
+      "prismatic-laser"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the slow growth rate need to reach level 100?",
+    "gold_sql": "SELECT e.experience FROM experience e JOIN growth_rates g ON e.growth_rate_id=g.id WHERE g.identifier='slow' AND e.level=100",
+    "gold_answer": [
+      [
+        1250000
+      ]
+    ],
+    "expected_answer": "A slow growth-rate Pokemon needs 1250000 experience to reach level 100.",
+    "keywords": [
+      "1250000"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the medium growth rate need to reach level 100?",
+    "gold_sql": "SELECT e.experience FROM experience e JOIN growth_rates g ON e.growth_rate_id=g.id WHERE g.identifier='medium' AND e.level=100",
+    "gold_answer": [
+      [
+        1000000
+      ]
+    ],
+    "expected_answer": "A medium growth-rate Pokemon needs 1000000 experience to reach level 100.",
+    "keywords": [
+      "1000000"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the fast growth rate need to reach level 100?",
+    "gold_sql": "SELECT e.experience FROM experience e JOIN growth_rates g ON e.growth_rate_id=g.id WHERE g.identifier='fast' AND e.level=100",
+    "gold_answer": [
+      [
+        800000
+      ]
+    ],
+    "expected_answer": "A fast growth-rate Pokemon needs 800000 experience to reach level 100.",
+    "keywords": [
+      "800000"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the medium-slow growth rate need to reach level 100?",
+    "gold_sql": "SELECT e.experience FROM experience e JOIN growth_rates g ON e.growth_rate_id=g.id WHERE g.identifier='medium-slow' AND e.level=100",
+    "gold_answer": [
+      [
+        1059860
+      ]
+    ],
+    "expected_answer": "A medium-slow growth-rate Pokemon needs 1059860 experience to reach level 100.",
+    "keywords": [
+      "1059860"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the slow-then-very-fast growth rate need to reach level 100?",
+    "gold_sql": "SELECT e.experience FROM experience e JOIN growth_rates g ON e.growth_rate_id=g.id WHERE g.identifier='slow-then-very-fast' AND e.level=100",
+    "gold_answer": [
+      [
+        600000
+      ]
+    ],
+    "expected_answer": "A slow-then-very-fast growth-rate Pokemon needs 600000 experience to reach level 100.",
+    "keywords": [
+      "600000"
+    ]
+  },
+  {
+    "question": "How much total experience does a Pokemon with the fast-then-very-slow growth rate need to reach level 100?",
+    "gold_sql": "SELECT e.experience FROM experience e JOIN growth_rates g ON e.growth_rate_id=g.id WHERE g.identifier='fast-then-very-slow' AND e.level=100",
+    "gold_answer": [
+      [
+        1640000
+      ]
+    ],
+    "expected_answer": "A fast-then-very-slow growth-rate Pokemon needs 1640000 experience to reach level 100.",
+    "keywords": [
+      "1640000"
+    ]
+  },
+  {
+    "question": "Which nature raises Attack and lowers Special Attack?",
+    "gold_sql": "SELECT n.identifier FROM natures n JOIN stats si ON n.increased_stat_id=si.id JOIN stats sd ON n.decreased_stat_id=sd.id WHERE si.identifier='attack' AND sd.identifier='special-attack'",
+    "gold_answer": [
+      [
+        "adamant"
+      ]
+    ],
+    "expected_answer": "The Adamant nature raises Attack and lowers Special Attack.",
+    "keywords": [
+      "adamant"
+    ]
+  },
+  {
+    "question": "Which nature raises Attack and lowers Defense?",
+    "gold_sql": "SELECT n.identifier FROM natures n JOIN stats si ON n.increased_stat_id=si.id JOIN stats sd ON n.decreased_stat_id=sd.id WHERE si.identifier='attack' AND sd.identifier='defense'",
+    "gold_answer": [
+      [
+        "lonely"
+      ]
+    ],
+    "expected_answer": "The Lonely nature raises Attack and lowers Defense.",
+    "keywords": [
+      "lonely"
+    ]
+  },
+  {
+    "question": "Which nature raises Speed and lowers Special Attack?",
+    "gold_sql": "SELECT n.identifier FROM natures n JOIN stats si ON n.increased_stat_id=si.id JOIN stats sd ON n.decreased_stat_id=sd.id WHERE si.identifier='speed' AND sd.identifier='special-attack'",
+    "gold_answer": [
+      [
+        "jolly"
+      ]
+    ],
+    "expected_answer": "The Jolly nature raises Speed and lowers Special Attack.",
+    "keywords": [
+      "jolly"
+    ]
+  },
+  {
+    "question": "Which nature raises Special Attack and lowers Attack?",
+    "gold_sql": "SELECT n.identifier FROM natures n JOIN stats si ON n.increased_stat_id=si.id JOIN stats sd ON n.decreased_stat_id=sd.id WHERE si.identifier='special-attack' AND sd.identifier='attack'",
+    "gold_answer": [
+      [
+        "modest"
+      ]
+    ],
+    "expected_answer": "The Modest nature raises Special Attack and lowers Attack.",
+    "keywords": [
+      "modest"
+    ]
+  },
+  {
+    "question": "Which nature raises Defense and lowers Special Attack?",
+    "gold_sql": "SELECT n.identifier FROM natures n JOIN stats si ON n.increased_stat_id=si.id JOIN stats sd ON n.decreased_stat_id=sd.id WHERE si.identifier='defense' AND sd.identifier='special-attack'",
+    "gold_answer": [
+      [
+        "impish"
+      ]
+    ],
+    "expected_answer": "The Impish nature raises Defense and lowers Special Attack.",
+    "keywords": [
+      "impish"
+    ]
+  },
+  {
+    "question": "Which nature raises Speed and lowers Attack?",
+    "gold_sql": "SELECT n.identifier FROM natures n JOIN stats si ON n.increased_stat_id=si.id JOIN stats sd ON n.decreased_stat_id=sd.id WHERE si.identifier='speed' AND sd.identifier='attack'",
+    "gold_answer": [
+      [
+        "timid"
+      ]
+    ],
+    "expected_answer": "The Timid nature raises Speed and lowers Attack.",
+    "keywords": [
+      "timid"
+    ]
+  },
+  {
+    "question": "Which nature raises Special Defense and lowers Attack?",
+    "gold_sql": "SELECT n.identifier FROM natures n JOIN stats si ON n.increased_stat_id=si.id JOIN stats sd ON n.decreased_stat_id=sd.id WHERE si.identifier='special-defense' AND sd.identifier='attack'",
+    "gold_answer": [
+      [
+        "calm"
+      ]
+    ],
+    "expected_answer": "The Calm nature raises Special Defense and lowers Attack.",
+    "keywords": [
+      "calm"
+    ]
+  },
+  {
+    "question": "Which nature raises Attack and lowers Speed?",
+    "gold_sql": "SELECT n.identifier FROM natures n JOIN stats si ON n.increased_stat_id=si.id JOIN stats sd ON n.decreased_stat_id=sd.id WHERE si.identifier='attack' AND sd.identifier='speed'",
+    "gold_answer": [
+      [
+        "brave"
+      ]
+    ],
+    "expected_answer": "The Brave nature raises Attack and lowers Speed.",
+    "keywords": [
+      "brave"
+    ]
+  },
+  {
+    "question": "Which nature raises Special Attack and lowers Speed?",
+    "gold_sql": "SELECT n.identifier FROM natures n JOIN stats si ON n.increased_stat_id=si.id JOIN stats sd ON n.decreased_stat_id=sd.id WHERE si.identifier='special-attack' AND sd.identifier='speed'",
+    "gold_answer": [
+      [
+        "quiet"
+      ]
+    ],
+    "expected_answer": "The Quiet nature raises Special Attack and lowers Speed.",
+    "keywords": [
+      "quiet"
+    ]
+  },
+  {
+    "question": "Which nature raises Defense and lowers Speed?",
+    "gold_sql": "SELECT n.identifier FROM natures n JOIN stats si ON n.increased_stat_id=si.id JOIN stats sd ON n.decreased_stat_id=sd.id WHERE si.identifier='defense' AND sd.identifier='speed'",
+    "gold_answer": [
+      [
+        "relaxed"
+      ]
+    ],
+    "expected_answer": "The Relaxed nature raises Defense and lowers Speed.",
+    "keywords": [
+      "relaxed"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation I Fire-type Pokemon has the highest base stat total?",
+    "gold_sql": "SELECT ps.identifier, SUM(pst.base_stat) bst FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id WHERE t.identifier='fire' AND ps.generation_id=1 AND p.is_default=1 AND ps.is_legendary=0 AND ps.is_mythical=0 GROUP BY p.id ORDER BY bst DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "arcanine"
+      ]
+    ],
+    "expected_answer": "Arcanine has the highest base stat total (555) among non-legendary Generation I Fire-types.",
+    "keywords": [
+      "arcanine"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation I Water-type Pokemon has the highest base stat total?",
+    "gold_sql": "SELECT ps.identifier, SUM(pst.base_stat) bst FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id WHERE t.identifier='water' AND ps.generation_id=1 AND p.is_default=1 AND ps.is_legendary=0 AND ps.is_mythical=0 GROUP BY p.id ORDER BY bst DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "gyarados"
+      ]
+    ],
+    "expected_answer": "Gyarados has the highest base stat total (540) among non-legendary Generation I Water-types.",
+    "keywords": [
+      "gyarados"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation I Psychic-type Pokemon has the highest base stat total?",
+    "gold_sql": "SELECT ps.identifier, SUM(pst.base_stat) bst FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id WHERE t.identifier='psychic' AND ps.generation_id=1 AND p.is_default=1 AND ps.is_legendary=0 AND ps.is_mythical=0 GROUP BY p.id ORDER BY bst DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "exeggutor"
+      ]
+    ],
+    "expected_answer": "Exeggutor has the highest base stat total (530) among non-legendary Generation I Psychic-types.",
+    "keywords": [
+      "exeggutor"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation III Dragon-type Pokemon has the highest base stat total?",
+    "gold_sql": "SELECT ps.identifier, SUM(pst.base_stat) bst FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id WHERE t.identifier='dragon' AND ps.generation_id=3 AND p.is_default=1 AND ps.is_legendary=0 AND ps.is_mythical=0 GROUP BY p.id ORDER BY bst DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "salamence"
+      ]
+    ],
+    "expected_answer": "Salamence has the highest base stat total (600) among non-legendary Generation III Dragon-types.",
+    "keywords": [
+      "salamence"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation II Dark-type Pokemon has the highest base stat total?",
+    "gold_sql": "SELECT ps.identifier, SUM(pst.base_stat) bst FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id WHERE t.identifier='dark' AND ps.generation_id=2 AND p.is_default=1 AND ps.is_legendary=0 AND ps.is_mythical=0 GROUP BY p.id ORDER BY bst DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "tyranitar"
+      ]
+    ],
+    "expected_answer": "Tyranitar has the highest base stat total (600) among non-legendary Generation II Dark-types.",
+    "keywords": [
+      "tyranitar"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation IV Steel-type Pokemon has the highest base stat total?",
+    "gold_sql": "SELECT ps.identifier, SUM(pst.base_stat) bst FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id WHERE t.identifier='steel' AND ps.generation_id=4 AND p.is_default=1 AND ps.is_legendary=0 AND ps.is_mythical=0 GROUP BY p.id ORDER BY bst DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "magnezone"
+      ]
+    ],
+    "expected_answer": "Magnezone has the highest base stat total (535) among non-legendary Generation IV Steel-types.",
+    "keywords": [
+      "magnezone"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation I Grass-type Pokemon has the highest base stat total?",
+    "gold_sql": "SELECT ps.identifier, SUM(pst.base_stat) bst FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id WHERE t.identifier='grass' AND ps.generation_id=1 AND p.is_default=1 AND ps.is_legendary=0 AND ps.is_mythical=0 GROUP BY p.id ORDER BY bst DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "exeggutor"
+      ]
+    ],
+    "expected_answer": "Exeggutor has the highest base stat total (530) among non-legendary Generation I Grass-types.",
+    "keywords": [
+      "exeggutor"
+    ]
+  },
+  {
+    "question": "Excluding legendaries and mythicals, which Generation III Ghost-type Pokemon has the highest base stat total?",
+    "gold_sql": "SELECT ps.identifier, SUM(pst.base_stat) bst FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id WHERE t.identifier='ghost' AND ps.generation_id=3 AND p.is_default=1 AND ps.is_legendary=0 AND ps.is_mythical=0 GROUP BY p.id ORDER BY bst DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "dusclops"
+      ]
+    ],
+    "expected_answer": "Dusclops has the highest base stat total (455) among non-legendary Generation III Ghost-types.",
+    "keywords": [
+      "dusclops"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the Levitate ability and are Ghost-type?",
+    "gold_sql": "SELECT COUNT(DISTINCT p.id) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE a.identifier='levitate' AND t.identifier='ghost' AND p.is_default=1",
+    "gold_answer": [
+      [
+        6
+      ]
+    ],
+    "expected_answer": "6 Pokemon have Levitate and are Ghost-type.",
+    "keywords": [
+      "6"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the Sturdy ability and are Rock-type?",
+    "gold_sql": "SELECT COUNT(DISTINCT p.id) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE a.identifier='sturdy' AND t.identifier='rock' AND p.is_default=1",
+    "gold_answer": [
+      [
+        28
+      ]
+    ],
+    "expected_answer": "28 Pokemon have Sturdy and are Rock-type.",
+    "keywords": [
+      "28"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the Swift Swim ability and are Water-type?",
+    "gold_sql": "SELECT COUNT(DISTINCT p.id) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE a.identifier='swift-swim' AND t.identifier='water' AND p.is_default=1",
+    "gold_answer": [
+      [
+        40
+      ]
+    ],
+    "expected_answer": "40 Pokemon have Swift Swim and are Water-type.",
+    "keywords": [
+      "40"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the Chlorophyll ability and are Grass-type?",
+    "gold_sql": "SELECT COUNT(DISTINCT p.id) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE a.identifier='chlorophyll' AND t.identifier='grass' AND p.is_default=1",
+    "gold_answer": [
+      [
+        37
+      ]
+    ],
+    "expected_answer": "37 Pokemon have Chlorophyll and are Grass-type.",
+    "keywords": [
+      "37"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the Static ability and are Electric-type?",
+    "gold_sql": "SELECT COUNT(DISTINCT p.id) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE a.identifier='static' AND t.identifier='electric' AND p.is_default=1",
+    "gold_answer": [
+      [
+        20
+      ]
+    ],
+    "expected_answer": "20 Pokemon have Static and are Electric-type.",
+    "keywords": [
+      "20"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the Flash Fire ability and are Fire-type?",
+    "gold_sql": "SELECT COUNT(DISTINCT p.id) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE a.identifier='flash-fire' AND t.identifier='fire' AND p.is_default=1",
+    "gold_answer": [
+      [
+        24
+      ]
+    ],
+    "expected_answer": "24 Pokemon have Flash Fire and are Fire-type.",
+    "keywords": [
+      "24"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the Intimidate ability and are Normal-type?",
+    "gold_sql": "SELECT COUNT(DISTINCT p.id) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE a.identifier='intimidate' AND t.identifier='normal' AND p.is_default=1",
+    "gold_answer": [
+      [
+        8
+      ]
+    ],
+    "expected_answer": "8 Pokemon have Intimidate and are Normal-type.",
+    "keywords": [
+      "8"
+    ]
+  },
+  {
+    "question": "How many Pokemon have the Blaze ability and are Fire-type?",
+    "gold_sql": "SELECT COUNT(DISTINCT p.id) FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_abilities pa ON p.id=pa.pokemon_id JOIN abilities a ON pa.ability_id=a.id JOIN pokemon_types pt ON p.id=pt.pokemon_id JOIN types t ON pt.type_id=t.id WHERE a.identifier='blaze' AND t.identifier='fire' AND p.is_default=1",
+    "gold_answer": [
+      [
+        29
+      ]
+    ],
+    "expected_answer": "29 Pokemon have Blaze and are Fire-type.",
+    "keywords": [
+      "29"
+    ]
+  },
+  {
+    "question": "Which Pokemon has the highest base HP of all?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE s.identifier='hp' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "blissey"
+      ]
+    ],
+    "expected_answer": "Blissey has the highest base HP at 255.",
+    "keywords": [
+      "blissey"
+    ]
+  },
+  {
+    "question": "Which Pokemon has the highest base Attack of all?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE s.identifier='attack' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "kartana"
+      ]
+    ],
+    "expected_answer": "Kartana has the highest base Attack at 181.",
+    "keywords": [
+      "kartana"
+    ]
+  },
+  {
+    "question": "Which Pokemon has the highest base Defense of all?",
+    "gold_sql": "SELECT ps.identifier FROM pokemon p JOIN pokemon_species ps ON p.species_id=ps.id JOIN pokemon_stats pst ON p.id=pst.pokemon_id JOIN stats s ON pst.stat_id=s.id WHERE s.identifier='defense' AND p.is_default=1 ORDER BY pst.base_stat DESC LIMIT 1",
+    "gold_answer": [
+      [
+        "shuckle"
+      ]
+    ],
+    "expected_answer": "Shuckle has the highest base Defense at 230.",
+    "keywords": [
+      "shuckle"
+    ]
+  }
+]
