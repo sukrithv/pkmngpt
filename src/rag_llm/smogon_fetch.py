@@ -207,13 +207,11 @@ def get_sets(store, pokemon, generation=None, tier=None):
 
 
 if __name__ == "__main__":
-    # gen_tier = [
-    #     (f"gen{gen}", tier)
-    #     for tier in ("ubers", "ou", "uu", "ru", "nu", "pu", "zu")
-    #     for gen in set(range(1,10)) | {"9champions"}
-    # ]
+    gen_tier = [
+        (f"gen{gen}", tier)
+        for tier in ("ubers", "ou", "uu", "ru", "nu", "pu", "zu")
+        for gen in set(range(1,10)) | {"9champions"}
+    ]
 
-    # chunk_smogon_sets(gen_tier)
-
-    # fetch_smogon_analyses(gen_tier)
-    chunk_smogon_analyses()
+    chunk_smogon_sets(gen_tier)
+    fetch_smogon_analyses(gen_tier)

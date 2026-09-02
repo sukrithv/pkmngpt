@@ -356,31 +356,7 @@ def chunk_concept(raw_text, topic, chunk_size, overlap):
 # --------------------------------------------------------------------------- #
 
 if __name__ == "__main__":
-    # with open(ARTICLES_JSON, "r", encoding="utf-8") as file:
-    #     articles = json.load(file)
-    # fetch_many(articles["pokemon"])
-    # fetch_many_articles(articles["concepts"])
-
-    # print(misses)
-
-    # raw_text = (CONCEPT_DIR / "ability.wikitext").read_text(encoding="utf-8")
-    # chunks = chunk_concept(raw_text, "ability", config.CHUNK_SIZE, config.CHUNK_OVERLAP)
-    # print(f"\n{len(chunks)} chunks\n" + "=" * 60)
-    # for c in chunks:
-    #     print(f"\n[{c['section']}] ({len(c['text'])} chars)")
-    #     print(c["text"][:300])
-
-    import json
-    from collections import Counter
-
-    import config
-
-    chunks = [json.loads(l) for l in open(config.CHUNKS_FILE)]
-    print("total chunks:", len(chunks))
-    per_source = Counter(c["source"] for c in chunks)
-    print("0-1 chunk sources:", [s for s, n in per_source.items() if n <= 1][:20])
-    print(">40 chunk sources:", [(s, n) for s, n in per_source.items() if n > 40][:10])
-    print("median chunks/source:", sorted(per_source.values())[len(per_source) // 2])
-
-    raw = open("data/raw/bulbapedia/pokemon/volbeat.wikitext").read()
-    print(len(raw))
+    with open(ARTICLES_JSON, "r", encoding="utf-8") as file:
+        articles = json.load(file)
+    fetch_many(articles["pokemon"])
+    fetch_many_articles(articles["concepts"])

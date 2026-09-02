@@ -92,7 +92,8 @@ python -c "from src.sql_llm.sql_pokeapi import build_database; build_database('d
 # 2. Bulbapedia + Smogon content: fetch, then chunk + embed into Chroma.
 python -m src.rag_llm.bulbapedia_fetch
 python -m src.rag_llm.smogon_fetch
-python scripts/build_index.py
+python -m src.rag_llm.ingest
+python -m src.rag_llm.vectorstore
 
 # 3. Damage calc bridge: install and start the Node service (separate terminal).
 cd src/smogon_calc/node && npm install && node server.js
@@ -121,78 +122,13 @@ Three separate eval harnesses, one per concern:
 
 `src/dspy_eval.py` (`python -m src.dspy_eval keyword`/`judge`) and
 `eval/eval_set.json` are older and evaluate a different, standalone
-retrieval pipeline — see "Earlier/alternate pipelines" below.
+retrieval pipeline
 
-## Earlier / alternate pipelines (not part of the router)
+## Next Steps
 
-Two things in `src/` predate or sit alongside the router above and aren't
-wired into `api.py` or `PokemonRouter`. Kept in the tree, worth knowing
-about before assuming everything under `src/` is on the request path:
-
-- **`src/pokeapi.py`** — the project's original retrieval approach: live
-  PokeAPI REST lookups by name-matching against hardcoded slug lists
-  (`GEN_1_NAMES`, `TYPE_NAMES`, etc.), no local index. `src/dspy_eval.py`'s
-  `PokemonRAG` module and its eval (`eval/eval_set.json`) still run against
-  this path, but the router uses the Chroma-backed `src/rag_llm/rag.py`
-  instead.
-- **`src/react_agent.py`** — a `dspy.ReAct` agent that answers broader
-  questions ("which fire types learn flying moves?") by calling
-  `src/pokeapi.py`'s functions as tools, iterating up to `MAX_ITERS` times.
-  Not imported by the router and has no test coverage; an alternate design
-  for cross-entity questions that the router's SQL branch now covers for
-  most cases.
-
-## File map
-
-| Path | Purpose |
-|---|---|
-| `config.py` | Central config, reads `.env` |
-| `api.py` | FastAPI app: `POST /ask` → `PokemonRouter`, serves `ui.html` |
-| `ui.html` | Static chat UI |
-| `src/router.py` | `PokemonRouter` — classifies, dispatches to engines, synthesizes |
-| `src/router_demos.py` | Few-shot demos for the router's classifier |
-| `src/router_eval.py` | Routing accuracy eval |
-| `src/llm.py` | Ollama/Claude generation, selected by `LLM_BACKEND` |
-| `src/sql_llm/sql_pokeapi.py` | Schema doc + `build_database()` + query execution against `pokeapi.db` |
-| `src/sql_llm/sql_agent.py` | `TextToSQL` DSPy module |
-| `src/sql_llm/diagnose_sql.py` | Per-category SQL eval (pass / SQL error / wrong result / no SQL) |
-| `src/rag_llm/bulbapedia_fetch.py` | Fetch + chunk Bulbapedia articles |
-| `src/rag_llm/smogon_fetch.py` | Fetch/chunk Smogon analyses; the competitive set store (`get_sets`, `format_sets`) |
-| `src/rag_llm/ingest.py` | Load + chunk any `data/raw/` document (routes to the fetchers above) |
-| `src/rag_llm/vectorstore.py` | Embed chunks (sentence-transformers), build/query the Chroma index |
-| `src/rag_llm/rag.py` | `RAGAnswer` DSPy module — retrieve + generate a grounded answer |
-| `src/rag_llm/inspect_rag.py` | Manual retrieval sanity check |
-| `src/smogon_calc/client.py` | Python client for the Node `@smogon/calc` bridge |
-| `src/smogon_calc/set_adapter.py` | Adapts a Smogon set-store entry into the calc client's input shape |
-| `src/smogon_calc/calc_llm.py` | `DamageCalcModule` — NL scenario → structured calc → formatted result |
-| `src/smogon_calc/node/server.js` | Express service wrapping `@smogon/calc` |
-| `src/pokeapi.py` | Live PokeAPI lookups — original retrieval path, see "Earlier/alternate pipelines" |
-| `src/dspy_eval.py` | Standalone eval harness for `src/pokeapi.py`'s retrieval (legacy) |
-| `src/react_agent.py`, `src/optimize_react_agent.py` | ReAct broad-question agent + SQL-agent prompt optimizer, see above |
-| `scripts/ask.py` | CLI: ask the Pokemon/concept RAG engine a question |
-| `scripts/build_index.py` | CLI: chunk `data/raw/` + (re)build the Chroma index |
-| `eval/` | Eval sets — routing, SQL (simple/complex), and the legacy RAG set |
-| `data/full_article_list.json` | Known Pokemon/concept name lists the router resolves against |
-| `next_phases_plan.md` | Design notes for the damage calculator and a planned DQN self-play battler |
-| `extension.md` | Design notes for DSPy prompt optimization vs. local fine-tuning, per backend |
-
-## Known issue
-
-`scripts/ask.py` calls `rag.answer(...)`; that wrapper now exists on
-`src/rag_llm/rag.py` but the local dev environment currently hits an
-unrelated `numpy`/`dspy` import error (`TypeError: data type 'bool' not
-understood`) when `chromadb` is imported, likely a version mismatch between
-pinned dependencies. Worth resolving (e.g. re-pinning `numpy`/`chromadb`
-versions and re-locking) before relying on the RAG-backed CLI or router.
-
-## Not yet done
-
-- A real eval set for the router's synthesis step (only routing accuracy and
-  SQL correctness are measured today, not final-answer quality end to end).
-- DSPy prompt optimization for the router's classifier and RAG generation
-  (only the SQL agent has an optimizer today, in
-  `src/optimize_react_agent.py`).
-- The damage-calc → DQN self-play battler described in
-  `next_phases_plan.md` — a separate, much larger project (needs a
-  Showdown/`poke-env` battle simulator and GPU time).
+- Shorten latency of each question.
+- Develop support for multi-agent reasoning.
 - Fine-tuning the local Ollama model, per `extension.md`.
+- Push complete DQN self-play battler described in
+  `next_phases_plan.md` (needs a Showdown/`poke-env` battle simulator and GPU time)
+  for a higher accuracy.
